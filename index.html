@@ -10,7 +10,7 @@
 </head>
 <body onhashchange="pageChange()">
     <header>
-        <a><img src="img/logo.png" alt="Væskebalancens logo" class="logo"></a>
+        <a href="#home"><img src="img/logo.png" alt="Væskebalancens logo" class="logo"></a>
         <div class="burger">
             <span class="white"></span>
             <span class="white"></span>
@@ -36,13 +36,48 @@
     </header>
     <main class="main">
         <section id="home" class="page">
-            <h1>VÆSKEBALANCEN</h1>
-            <h3>Herinde giver vi dig et hurtigt overblik 
+            <div class="margin">
+                <h1>VÆSKEBALANCEN</h1>
+                <h3>Herinde giver vi dig et hurtigt overblik 
                 over vores store udvalg af specialøl. 
                 Væskebalancens vision er at sælge 
                 kvalitetsøl til en pris, hvor alle kan være med. 
-            </h3>
-
+                </h3>
+            </div>
+            <div class="margin">
+                <div>
+                    <a href="#ol" class="gridBox" id="populære">
+                        <h2 class="h2Tekst">Populære</h2>
+                        <img src="img/wooWoo.png" alt="Strawberry Woo Woo">
+                    </a>
+                </div>
+                <div>
+                    <a href="#ol" class="gridBox" id="juleøl">
+                        <h2 class="h2Tekst">Juleøl</h2>
+                    <img src="img/stilleNacht.png" alt="Stille Nacth">
+                    </a>
+                    
+                </div>
+                <div>
+                    <a href="" class="gridBox" id="nyheder">
+                        <h2 class="h2Tekst">Nyheder</h2>
+                        <img src="img/stilleNacht.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div id="nyhedsbrev" class="margin">
+                <h2>Nyhedsbrev</h2>
+                <p>
+                    Gå ikke glip af vores nyeste specialøl
+                </p>
+                <form>
+                    <input class="emailBtn" type="email" id="yourEmail" placeholder="Indtast din e-mail" required><br>
+                    <input type="checkbox" id="accept" required>
+                    <label for="accept">Jeg har læst og accepteret <a href="#" id="link">vilkår og betingelser</a></label><br>
+                    <input class="emailBtn" type="button" id="emailBtn" value="Tilmeld" type="submit"
+                        onclick="createEmail(this.value)">
+                </form>
+            </div>
         </section>
         <section id="ol" class="page">
             <h1>ØL</h1>
@@ -72,6 +107,8 @@
         </section>
     </main>
     <footer></footer>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
     <script src="js/spa.js"></script>
     <script src="js/main.js"></script>
 </body>

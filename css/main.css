@@ -93,8 +93,83 @@ nav p {
    top: 3px;
 }
 
-
 /* header ends */
 /* main */
+/* home */
+main {
+    width: 90%;
+    margin: auto;
+}
+.gridBox {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: white;
+    border-radius: 5px;
+    margin: 5% auto;
+    height: 150px;
+}
+.gridBox img {
+    width: 17%;
+    margin: auto;
+
+}
+#populære {
+    background-color:#31829B;
+}
+#juleøl {
+    background-color:#266376;
+}
+#nyheder {
+    background-color:#1D4D5D;
+}
+.h2Tekst {
+    padding: 60px 0;
+    height: 30px;
+}
+#yourEmail {
+    border: 1px solid grey;
+    padding: 3% 5% 3% 5%;
+    outline: 0;
+    background-color: white;
+    border-radius: 5px;
+    width: 70%;
+    font-size: 1.3em;
+}
+
+#emailBtn {
+    border: 1px solid grey;
+    padding: 2% 1% 2% 1%;
+    outline: 0;
+    color: white;
+    background-color: #1D4D5D;
+    border: #1D4D5D;
+    border-radius: 12px;
+    width: 35%;
+    font-size: 1.5em;
+}
+#link {
+    color: blue;
+}
+#nyhedsbrev {
+    display: grid;
+    row-gap: 2%;
+}
+.emailBtn {
+    margin: 5% 0 5% 0;
+}
+
+/* home ends */
+h1 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #266376;
+}
+h3 {
+    font-size: 1em;
+    margin: 5% 0 10% 0;
+}
+.margin {
+    margin: 0% 0 15% 0;
+}
 
 /* main ends */
