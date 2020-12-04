@@ -60,7 +60,7 @@ function appendPosts(posts) {
         htmlTemplate += /*html*/ `
         <article>
         <h3>${post.description}</h3>
-        <img src="${post.image}" class="postImage">
+        <img src="${post.image}" class="postImage"><br>
         <button id="${post.id}">Læs mere</button>
         </article>
     `;
