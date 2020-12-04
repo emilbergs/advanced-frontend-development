@@ -43,16 +43,27 @@ function createEmail() {
     emailInput.value = "Thanks!";
 }
 
-function appendPosts(demos) {
+postRef.onSnapshot(function (snapshotData) {
+    let posts = [];
+    snapshotData.forEach(function (doc) {
+        let post = doc.data();
+        console.log(post);
+        post.id = doc.id;
+        posts.push(post);
+    });
+    appendPosts(posts);
+});
+
+function appendPosts(posts) {
     let htmlTemplate = "";
     for (let post of posts) {
-        console.log(post.id);
-        console.log(post.artist);
-        htmlTemplate += `
-    <article>
-    <img src="${post.image}">
-    </article>
+        htmlTemplate += /*html*/ `
+        <article>
+        <h3>${post.description}</h3>
+        <img src="${post.image}" class="postImage">
+        <button id="${post.id}">Læs mere</button>
+        </article>
     `;
     }
-    document.querySelector('#demos').innerHTML = '<a href="#home"><img src="img/returnbutton2.png" class="backbutton" alt="backbutton"></a>' + "<h1>Public demos</h1>" + "<div class='flexContainer'>" + htmlTemplate + "</div>"
+    document.querySelector('.content').innerHTML = htmlTemplate
 }
