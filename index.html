@@ -4,19 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://use.typekit.net/gst7msd.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Væskebalancen</title>
 </head>
-<body>
+<body onhashchange="pageChange()">
     <header>
+        <a><img src="img/logo.png" alt="Væskebalancens logo" class="logo"></a>
         <div class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>  
+            <span class="white"></span>
+            <span class="white"></span>
+            <span class="white"></span>
+        </div>
+        <nav class="navBar tabbar">
+            <ul>
+                <li>
+                    <a href="#home" onclick="show()">Forside</a>
+                </li>
+                <li>
+                    <a href="#ol" onclick="show()">Øl</a>
+                </li>
+                <li>
+                    <a href="#bygSelv" onclick="show()">Byg selv</a>
+                </li>
+                <li>
+                    <a href="#kontakt" onclick="show()">Om os</a>
+                </li>
+            </ul>
+            <p>Find os på</p>
+        </nav>
     </header>
-    <main></main>
+    <main class="main">
+        <section id="home" class="page">
+            <h1>VÆSKEBALANCEN</h1>
+            <h3>Herinde giver vi dig et hurtigt overblik 
+                over vores store udvalg af specialøl. 
+                Væskebalancens vision er at sælge 
+                kvalitetsøl til en pris, hvor alle kan være med. 
+            </h3>
+
+        </section>
+        <section id="ol" class="page">
+            <h1>ØL</h1>
+            <h3>Se vores kæmpe udvalg af specialøl
+                Hos Væskebalancen har vi noget til
+                en hver smag. Gå på opdagelse her, 
+                inden du besøger vores butik i Aarhus.
+            </h3>
+        </section>
+        <section id="bygSelv" class="page">
+            <h1>BYG DIN EGEN ØLKASSE</h1>
+            <h3>Du kan her sammensætte en kasse fyldt med dine favorit specialøl til fair priser.</h3>
+        </section>
+        <section id="kontakt" class="page">
+            <h1>VÆSKEBALANCEN</h1>
+            <p>Væskebalancen er en bottleshop, som rumsterer
+                i hjertet af Aarhus på Vestergade. Med et udvalg på over
+                1000 forskellige specialøl, byder vi jer hjerteligt velkommen
+                i vores butik, og vi er sikker på at vi kan finde noget som
+                passer præcis til dine behov! Sortimentet lyder på alt, lige fra
+                IPA, Barley Wine,  Stout, Belgian Ale og meget mere.
+                Derudover byder vi velkommen til mærkerne Whiplash, 
+                Stigbergets, North og Polly’s!
+                
+                Vores mål har været at skabe et sted, hvor man super nemt kan handle alle sine yndlings specialøl til fair priser!
+            </p>
+        </section>
+    </main>
     <footer></footer>
+    <script src="js/spa.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

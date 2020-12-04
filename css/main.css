@@ -1,7 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+}
+body {
+    text-align: center;
+}
+/* Header */
+header {
+    height: 17vh;
+}
 .burger {
     cursor: pointer;
     width: 50px;
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
 }
@@ -31,3 +49,52 @@
     transform: rotate(-45deg);
     top: -15px;
 }
+
+nav {
+    height: 100vh;
+    width: 100vw;
+    background-color: #2B6A80;
+    text-align: center;
+}
+nav ul {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+nav ul li {
+    font-size: 3em;
+    padding: 15%;
+}
+nav ul li a {
+    color: white;
+    font-weight: 700;
+}
+nav p {
+    color: white;
+    font-weight: 700;
+}
+.navBar {
+    display: none;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+.open .white {
+    background-color: white;
+}
+.logo {
+    position: absolute;
+    width: 30%;
+   left: 12px;
+   top: 3px;
+}
+
+
+/* header ends */
+/* main */
+
+/* main ends */
