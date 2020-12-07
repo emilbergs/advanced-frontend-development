@@ -54,7 +54,7 @@
                 <div>
                     <a href="#ol" class="gridBox" id="juleøl">
                         <h2 class="h2Tekst">Juleøl</h2>
-                    <img src="img/jul.png" id="jul" alt="juleøl">
+                    <img src="img/stilleNacht.png" alt="Stille Nacth">
                     </a>
                     
                 </div>
@@ -87,16 +87,61 @@
                 en hver smag. Gå på opdagelse her, 
                 inden du besøger vores butik i Aarhus.
             </h3>
-            <section id="filter"></section>
-        <section id="searchFilteredPosts" class="page"></section>
-            <div id="filterDiv">
-                <a onclick="showFilter()"><img src="img/filtericon.png" id="filter-icon"></a>
+            <div class="grid-ol-filter">
+                <div class="filteredBtns">
+                    <a onclick="noToggleMenu()" href="#ol">
+                        <p>Fjern filter</p>
+                    </a>
+                </div>
+                <div class="filteredBtns" id="filterDivOne">
+                <a onclick="showFilter()">
+                <p>Filtrer</p>
+            </a>
+        </div>
+
+<!-- Trying to do a pop-up modal-->
+<!--
+<div class="modal" id="modal">
+<div class="modal-header">
+    <div class="title">Example Modal</div>
+    <button class="close-button">&times;</button>
+</div>
+<div class="modal-body">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum eveniet magnam voluptates sed possimus cupiditate, nobis sunt, numquam ratione fuga rerum rem optio repellendus. Ad necessitatibus atque sapiente harum quod? Ullam, repudiandae. Et magnam, ipsum incidunt, sequi rem nobis nihil deleniti quia ex ipsam libero nesciunt suscipit vero nostrum maiores ullam. Quae vel aliquam modi iste, illo reiciendis nisi reprehenderit?
+</div>
+</div>
+<div class="active" id="overlay"></div>
+
+-->
+<!-- Trying to do a pop-up modal stopping here-->
+
+
             </div>
+            <section class="filter"></section>
             <div class="content grid-container">
 
             </div>
         </section>
-        
+        <section id="searchFilteredContent" class="page">
+            <section class="filter "></section>
+
+            <div class="grid-ol-filter">
+                <div class="filteredBtns">
+            <a onclick="noToggleMenu()" href="#ol">
+                <p>Fjern filter</p>
+            </a>
+        </div>
+        <div id="filterDivTwo" class="filteredBtns">
+            <a onclick="showFilter()">
+                <p>Filtrer</p>
+            </a>
+        </div>
+            </div>
+            <div id="filteredContent" class="grid-container"></div>
+        </section>
+        <section id="searchFilteredContent" class="grid-container page">
+            <div id="filteredContent"></div>
+            </section>
         <section id="bygSelv" class="page">
             <h1>BYG DIN EGEN ØLKASSE</h1><br>
             <p>Du kan her sammensætte en kasse fyldt med dine favorit specialøl til fair priser.</p><br>

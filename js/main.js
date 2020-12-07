@@ -50,20 +50,21 @@ postRef.onSnapshot(function (snapshotData) {
     let posts = [];
     snapshotData.forEach(function (doc) {
         let post = doc.data();
-        console.log(post);
         post.id = doc.id;
         posts.push(post);
+        _posts.push(post)
     });
     appendPosts(posts);
     appendPostsBygSelv(posts);
 });
-
 //Filter function
 function appendPosts(posts) {
     let htmlTemplate = "";
     for (let post of posts) {
         htmlTemplate += /*html*/ `
         <article>
+        <h3>${post.name}</h3>
+        <h4>${post.category}</h4>
         <img src="${post.image}" class="postImage"><br>
         <button id="${post.id}">Læs mere</button>
         </article>
@@ -72,34 +73,39 @@ function appendPosts(posts) {
     document.querySelector('.content').innerHTML = htmlTemplate
 }
 function showFilter() {
-    let filter = document.querySelector("#filter")
-    document.body.style.overflowY = "hidden";
-    filter.style.display = "block";
+    let filter = document.querySelector(".filter")
+    filter.style.display="block";
     let template = /*html*/ `
     <h2 id="filterFontOverskrift">Filter</h2>
     <p id="filterFont">Her kan du filtrere gennem </br> vores udvalg af øl<p>
     <div class="flexFilter">
         <div class="flexFilterItems">
             <div class="filterButtons">
-            <a href="#ol" onclick="changeColor(this, 'Jule øl'); searchFunctionGenre(); noToggleMenu();" class="notselected"><p>Jule øl</p></a>
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Juleøl'); searchFunctionGenre('Juleøl'); noToggleMenu();" class="notselected"><p>Juleøl</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#ol" onclick="changeColor(this, 'Sour'); searchFunctionGenre(); noToggleMenu();" class="notselected"><p>Sour</p></a>
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Sour'); searchFunctionGenre('Sour'); noToggleMenu();" class="notselected"><p>Sour</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#ol" onclick="changeColor(this, 'Barley wine'); searchFunctionGenre(); noToggleMenu();" class="notselected"><p>Barley wine</p></a>
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Barley Wine'); searchFunctionGenre('Barley Wine'); noToggleMenu();" class="notselected"><p>Barley wine</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#ol" onclick="changeColor(this, 'IPA'); searchFunctionGenre(); noToggleMenu();" class="notselected"><p>IPA</p></a>
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'IPA'); searchFunctionGenre('IPA'); noToggleMenu();" class="notselected"><p>IPA</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#ol" onclick="changeColor(this, 'Stout'); searchFunctionGenre(); noToggleMenu();" class="notselected"><p>Stout</p></a>
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Stout'); searchFunctionGenre('Stout'); noToggleMenu();" class="notselected"><p>Stout</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#ol" onclick="changeColor(this, 'Porter'); searchFunctionGenre(); noToggleMenu();" class="notselected"><p>Porter</p></a>
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Porter'); searchFunctionGenre('Porter'); noToggleMenu();" class="notselected"><p>Porter</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#ol" onclick="changeColor(this, 'Belgian Ale'); searchFunctionGenre(); noToggleMenu();" class="notselected"><p>Belgian Ale</p></a>
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Belgisk Ale'); searchFunctionGenre('Belgisk Ale'); noToggleMenu();" class="notselected"><p>Belgisk Ale</p></a>
+            </div>
+            <div class="filterButtons">
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Hvedeøl'); searchFunctionGenre('Hvedeøl'); noToggleMenu();" class="notselected"><p>Hvedeøl</p></a>
+            </div>
+            <div class="filterButtons">
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Lager'); searchFunctionGenre('Lager'); noToggleMenu();" class="notselected"><p>Lager</p></a>
             </div>
             
         </div>
@@ -107,17 +113,21 @@ function showFilter() {
     
     <a id="closemenu" onclick="noToggleMenu()"><img src="img/closeFilterIcon.png"></a>
     `;
-    document.querySelector("#filter").innerHTML = template;
+    document.querySelector(".filter").innerHTML = template;
+    
 }
 let selectedCategory = "";
 
 
 //Search
-function searchFunctionGenre() {
+function searchFunctionGenre(selectedCategory) {
+    console.log(selectedCategory)
+    console.log(_posts)
     let filteredSearch = [];
     for (const post of _posts) {
         if (post.category === selectedCategory) {
             filteredSearch.push(post)
+            console.log(filteredSearch)
         }
     }
     appendFilteredPosts(filteredSearch);
@@ -129,16 +139,22 @@ function appendFilteredPosts(posts) {
     for (const post of posts) {
         htmlTemplate += `
     <article>
-        <h3>${post.category}</h3>
+        <h3>${post.name}</h3>
+        <h4>${post.category}</h4>
         <img src="${post.image}" class="postImage"><br>
+        <button id="${post.id}">Læs mere</button>
     </article>
     `;
     }
-    document.querySelector('#searchFilteredPosts').innerHTML = htmlTemplate;
+    document.querySelector('#filteredContent').innerHTML = htmlTemplate;
 
 }
-let filterButton = document.querySelector("#filterDiv");
-filterButton.addEventListener("click", showFilter);
+
+let filterButtonOne = document.querySelector("#filterDivOne");
+filterButtonOne.addEventListener("click", showFilter);
+
+let filterButtonTwo = document.querySelector("#filterDivTwo");
+filterButtonTwo.addEventListener("click", showFilter);
 
 function changeColor(element, category) {
     let selected = document.querySelector(".selected");
@@ -152,11 +168,10 @@ function changeColor(element, category) {
 
 // Remove filter
 function noToggleMenu() {
-    let filter = document.querySelector("#filter");
+    let filter = document.querySelector(".filter");
     filter.style.display = "none";
     document.body.style.overflowY = "auto";
 }
-
 
 let bygSelvArray = [];
 
