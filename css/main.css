@@ -132,11 +132,18 @@ main {
 #populære {
     background-color:#31829B;
 }
+
+#popular {
+    width: 90%;
+}
 #juleøl {
     background-color:#266376;
 }
 #nyheder {
     background-color:#1D4D5D;
+}
+#nyheder1 {
+    width: 70%;
 }
 .h2Tekst {
     padding: 60px 0;
