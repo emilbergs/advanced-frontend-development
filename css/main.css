@@ -132,11 +132,25 @@ main {
 #populære {
     background-color:#31829B;
 }
+
+#popular {
+    width: 90%;
+}
 #juleøl {
     background-color:#266376;
 }
+
+#jul 
+{
+   width: 94%; 
+
+   
+}
 #nyheder {
     background-color:#1D4D5D;
+}
+#nyheder1 {
+    width: 70%;
 }
 .h2Tekst {
     padding: 60px 0;
@@ -176,6 +190,11 @@ main {
 
 /* home ends */
 /* øl */
+
+ol {
+    color:#5D5D5D;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 47.5% 47.5%;
@@ -184,6 +203,7 @@ main {
 }
 .postImage {
     height: 140px;
+    margin:2%
 }
 #ol .grid-container h3{
     color: #266376;
@@ -199,12 +219,74 @@ main {
     background-color:#266376;
     border: #266376;
     border-radius: 40px;
+    box-shadow: 3px 3px 3px #aaaaaa;
     margin: 5%;
 }
 article {
     border: 1px solid rgba(245, 245, 245, 0.5);
-    border-radius: 12px;
+    margin: 4%;
+    border-radius: 5px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 2.5px 0 rgba(0, 0, 0, 0.19);
+}
+
+#filter {
+    z-index: 1;
+    display: none;
+    background-color:  #266376;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#filterFont {
+    font-style: italic;
+    color: #ffffff;
+    font-weight: lighter;
+    padding-bottom: 3%;
+}
+
+#filterFontOverskrift {
+    color: #ffffff;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    font-weight: bolder;
+}
+
+.flexFilterItems a {
+    color:black;
+    text-decoration: none;
+    margin: 1%;
+    background-color: white;
+}
+
+.filterButtons {
+    background-color: white;
+    border-radius: 5px;
+    margin: 2.5% 5% 2.5% 5%;
+    text-align: left;
+    padding-left: 5%;
+    
+}
+
+#closemenu {
+    position: absolute;
+    background-color: #ffffff;
+    width: 9%;
+    border-radius: 50%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 2.5% 3% 2.5% 3%;
+    margin: 2% 0 0 29%;
+}
+
+#closemenu img {
+  width: 100%;
+  margin-top: 7%;
+}
+
+#filterDiv img {
+    width: 20%;
 }
 /* øl ends */
 
