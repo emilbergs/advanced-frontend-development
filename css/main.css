@@ -366,6 +366,7 @@ h4{
 
 .kasseTekst {
     font-size: 0.8em;
+    color: white;
 }
 
 #bygKasse {
@@ -384,6 +385,15 @@ h4{
     grid-template-columns: 45% 45%;
     grid-column-gap: 10%;
     grid-row-gap: 2%;
+}
+
+#olkasse {
+    background-color: #2B6A80;
+    color: white;
+    font-weight: 700;
+    font-size: 1.8em;
+    height: 150px;
+    width: 336px;
 }
 /* byg selv ends */
 
