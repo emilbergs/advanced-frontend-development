@@ -70,7 +70,6 @@ function appendPosts(posts) {
     }
     document.querySelector('.content').innerHTML = htmlTemplate
 }
-
 function showFilter() {
     let filter = document.querySelector("#filter")
     document.body.style.overflowY = "hidden";
@@ -109,25 +108,36 @@ function showFilter() {
     `;
     document.querySelector("#filter").innerHTML = template;
 }
-let selectedGenre = "";
+let selectedCategory = "";
 
-// Remove filter
-function noToggleMenu() {
-    let filter = document.querySelector("#filter");
-    filter.style.display = "none";
-    document.body.style.overflowY = "auto";
-}
 
 //Search
 function searchFunctionGenre() {
     let filteredSearch = [];
     for (const post of _posts) {
-        if (post.category === selectedGenre) {
+        if (post.category === selectedCategory) {
             filteredSearch.push(post)
         }
     }
     appendFilteredPosts(filteredSearch);
 }
+
+
+function appendFilteredPosts(posts) {
+    let htmlTemplate = "";
+    for (const post of posts) {
+        htmlTemplate += `
+    <article>
+        <h3>${post.category}</h3>
+        <img src="${post.image}" class="postImage"><br>
+    </article>
+    `;
+    }
+    document.querySelector('#searchFilteredPosts').innerHTML = htmlTemplate;
+
+}
+let filterButton = document.querySelector("#filterDiv");
+filterButton.addEventListener("click", showFilter);
 
 function changeColor(element, category) {
     let selected = document.querySelector(".selected");
@@ -136,21 +146,14 @@ function changeColor(element, category) {
     } else {
         element.classList.add("selected");
     }
-    selectedGenre = category;
+    selectedCategory = category;
 }
 
-function appendFilteredPosts(posts) {
-    let htmlTemplate = "";
-    for (const post of posts) {
-        htmlTemplate += `
-    <article>
-        <h3>${post.category}</h3>
-    </article>
-    `;
-
-    }
-    console.log(htmlTemplate)
-    document.querySelector('#searchFilteredSongs').innerHTML = htmlTemplate;
+// Remove filter
+function noToggleMenu() {
+    let filter = document.querySelector("#filter");
+    filter.style.display = "none";
+    document.body.style.overflowY = "auto";
 }
 
 function bygSelv() {
@@ -169,8 +172,7 @@ function bygSelv() {
         dryMatter: dryMatterInput.value,
         selfFeed: selfFeedInput.value
     };
-    firebase.auth().onAuthStateChanged(function (user) {
-        console.log(user.email);
-        year6.doc(user.email).set(newUser);
-    });
-}
+      firebase.auth().onAuthStateChanged(function (user) {
+      console.log(user.email);
+      year6.doc(user.email).set(newUser);
+    });}
