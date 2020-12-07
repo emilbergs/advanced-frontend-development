@@ -204,4 +204,49 @@ article {
 }
 /* øl ends */
 
+/* byg selv begins */
+.grid-bygSelv {
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    column-gap: 5%;
+    margin-top: 5%;
+}
+
+.grid-h1 {
+    display: grid;
+    grid-template-columns: 10% 73%;
+    column-gap: 5%;
+}
+
+.arrow {
+    border: solid #1D4D5D;
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    padding: 3px;
+    margin: 10px 0 0 0;
+  }
+
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+.kasse {
+    background-color: #1D4D5D;
+    color: white;
+    height: 40px;
+    padding: 25% 20% 30% 20%;
+    margin: 0 0 10% 0;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.kasseTekst {
+    font-size: 0.8em;
+}
+/* byg selv ends */
+
 /* main ends */
