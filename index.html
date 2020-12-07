@@ -114,20 +114,23 @@
                 <h1>Vælg kasse</h1>
             </div>
             <div class="grid-bygSelv">
-                <a href="#step2" id="kasse1" class="kasse">KASSE 1 <p class="kasseTekst">4 øl - 150-,</p></a>
-                <a href="#step2" id="kasse2" class="kasse">KASSE 2 <p class="kasseTekst">8 øl - 300-,</p></a>
-                <a href="#step2" id="kasse3" class="kasse">KASSE 3 <p class="kasseTekst">12 øl - 499-,</p></a>
-                <a href="#step2" id="kasse4" class="kasse">KASSE 4 <p class="kasseTekst">16 øl - 800-,</p></a>
+                <a href="#step2" id="kasse1" class="kasse" onclick="appendBygSelv(this.id)">KASSE 1 <p class="kasseTekst">4 øl - 150-,</p></a>
+                <a href="#step2" id="kasse2" class="kasse" onclick="appendBygSelv(this.id)">KASSE 2 <p class="kasseTekst">8 øl - 300-,</p></a>
+                <a href="#step2" id="kasse3" class="kasse" onclick="appendBygSelv(this.id)">KASSE 3 <p class="kasseTekst">12 øl - 499-,</p></a>
+                <a href="#step2" id="kasse4" class="kasse" onclick="appendBygSelv(this.id)">KASSE 4 <p class="kasseTekst">16 øl - 800-,</p></a>
             </div>
         </section>
         <section id="step2" class="page">
             <h3>BYG SELV</h3>
             <p>progress line</p>
             <div class="grid-h1">
-                <a href="#step1"><i class="arrow left"></i></a>
+                <a href="#step1" onclick="removeBygSelv()"><i class="arrow left"></i></a>
                 <h1>Vælg øl</h1>
             </div>
-            
+            <div id="bygSelvContent"></div>
+        </section>
+        <section id="step3" class="page">
+            <h1>hejmeddig</h1>
         </section>
         <section id="kontakt" class="page">
             <img src="img/coverpic.png" id="cover" alt="coverbillede">
