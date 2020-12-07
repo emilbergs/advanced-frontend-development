@@ -157,7 +157,7 @@ function noToggleMenu() {
     document.body.style.overflowY = "auto";
 }
 
-
+// Byg selv
 let bygSelvArray = [];
 
 function appendBygSelv(kasse){
