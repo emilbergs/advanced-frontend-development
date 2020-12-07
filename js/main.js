@@ -9,6 +9,7 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
+let _selectedUserId = "";
 let _posts = [];
 
 const db = firebase.firestore();
@@ -56,6 +57,7 @@ postRef.onSnapshot(function (snapshotData) {
     appendPosts(posts);
 });
 
+//Filter function
 function appendPosts(posts) {
     let htmlTemplate = "";
     for (let post of posts) {
@@ -68,27 +70,6 @@ function appendPosts(posts) {
     }
     document.querySelector('.content').innerHTML = htmlTemplate
 }
-
-function bygSelv() {
-    // references to the input fields
-    let kasse1Input = document.querySelector("#kasse1").value;
-    let kasse2Input = document.querySelector("#kasse2").value;
-    let kasse3Input = document.querySelector("#kasse3").value;
-    let kasse4Input = document.querySelector("#kasse4").value;
-
-    let newUser = {
-        year: "2020",
-        yearCows: nrCowsInput.value,
-        kgMilk: kgMilkInput.value,
-        diesel: dieselInput.value,
-        electricity: electricityInput.value,
-        dryMatter: dryMatterInput.value,
-        selfFeed: selfFeedInput.value
-    };
-      firebase.auth().onAuthStateChanged(function (user) {
-      console.log(user.email);
-      year6.doc(user.email).set(newUser);
-    });
 
 function showFilter() {
     let filter = document.querySelector("#filter")
@@ -137,10 +118,11 @@ function noToggleMenu() {
     document.body.style.overflowY = "auto";
 }
 
+//Search
 function searchFunctionGenre() {
     let filteredSearch = [];
     for (const post of _posts) {
-        if (post.genre === selectedGenre) {
+        if (post.category === selectedGenre) {
             filteredSearch.push(post)
         }
     }
@@ -162,11 +144,33 @@ function appendFilteredPosts(posts) {
     for (const post of posts) {
         htmlTemplate += `
     <article>
-        <h3>${post.genre}</h3>
+        <h3>${post.category}</h3>
     </article>
     `;
 
     }
+    console.log(htmlTemplate)
     document.querySelector('#searchFilteredSongs').innerHTML = htmlTemplate;
 }
+
+function bygSelv() {
+    // references to the input fields
+    let kasse1Input = document.querySelector("#kasse1").value;
+    let kasse2Input = document.querySelector("#kasse2").value;
+    let kasse3Input = document.querySelector("#kasse3").value;
+    let kasse4Input = document.querySelector("#kasse4").value;
+
+    let newUser = {
+        year: "2020",
+        yearCows: nrCowsInput.value,
+        kgMilk: kgMilkInput.value,
+        diesel: dieselInput.value,
+        electricity: electricityInput.value,
+        dryMatter: dryMatterInput.value,
+        selfFeed: selfFeedInput.value
+    };
+    firebase.auth().onAuthStateChanged(function (user) {
+        console.log(user.email);
+        year6.doc(user.email).set(newUser);
+    });
 }
