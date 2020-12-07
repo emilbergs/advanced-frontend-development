@@ -183,6 +183,11 @@ main {
 
 /* home ends */
 /* øl */
+
+ol {
+    color:#5D5D5D;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 47.5% 47.5%;
