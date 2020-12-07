@@ -9,6 +9,8 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
+let _posts = [];
+
 const db = firebase.firestore();
 const emailRef = db.collection("email");
 const postRef = db.collection("posts");
@@ -59,7 +61,6 @@ function appendPosts(posts) {
     for (let post of posts) {
         htmlTemplate += /*html*/ `
         <article>
-        <h3>${post.description}</h3>
         <img src="${post.image}" class="postImage"><br>
         <button id="${post.id}">Læs mere</button>
         </article>
@@ -88,4 +89,84 @@ function bygSelv() {
       console.log(user.email);
       year6.doc(user.email).set(newUser);
     });
+
+function showFilter() {
+    let filter = document.querySelector("#filter")
+    document.body.style.overflowY = "hidden";
+    filter.style.display = "block";
+    let template = /*html*/ `
+    <h2 id="filterFontOverskrift">Filter</h2>
+    <p id="filterFont">Her kan du filtrere gennem </br> vores udvalg af øl<p>
+    <div class="flexFilter">
+        <div class="flexFilterItems">
+            <div class="filterButtons">
+            <a href="#ol" onclick="changeColor(this, 'Jule øl'); searchFunctionGenre(); noToggleMenu();" class="notselected"><p>Jule øl</p></a>
+            </div>
+            <div class="filterButtons">
+            <a href="#ol" onclick="changeColor(this, 'Sour'); searchFunctionGenre(); noToggleMenu();" class="notselected"><p>Sour</p></a>
+            </div>
+            <div class="filterButtons">
+            <a href="#ol" onclick="changeColor(this, 'Barley wine'); searchFunctionGenre(); noToggleMenu();" class="notselected"><p>Barley wine</p></a>
+            </div>
+            <div class="filterButtons">
+            <a href="#ol" onclick="changeColor(this, 'IPA'); searchFunctionGenre(); noToggleMenu();" class="notselected"><p>IPA</p></a>
+            </div>
+            <div class="filterButtons">
+            <a href="#ol" onclick="changeColor(this, 'Stout'); searchFunctionGenre(); noToggleMenu();" class="notselected"><p>Stout</p></a>
+            </div>
+            <div class="filterButtons">
+            <a href="#ol" onclick="changeColor(this, 'Porter'); searchFunctionGenre(); noToggleMenu();" class="notselected"><p>Porter</p></a>
+            </div>
+            <div class="filterButtons">
+            <a href="#ol" onclick="changeColor(this, 'Belgian Ale'); searchFunctionGenre(); noToggleMenu();" class="notselected"><p>Belgian Ale</p></a>
+            </div>
+            
+        </div>
+    </div>
+    
+    <a id="closemenu" onclick="noToggleMenu()"><img src="img/closeFilterIcon.png"></a>
+    `;
+    document.querySelector("#filter").innerHTML = template;
+}
+let selectedGenre = "";
+
+// Remove filter
+function noToggleMenu() {
+    let filter = document.querySelector("#filter");
+    filter.style.display = "none";
+    document.body.style.overflowY = "auto";
+}
+
+function searchFunctionGenre() {
+    let filteredSearch = [];
+    for (const post of _posts) {
+        if (post.genre === selectedGenre) {
+            filteredSearch.push(post)
+        }
+    }
+    appendFilteredPosts(filteredSearch);
+}
+
+function changeColor(element, category) {
+    let selected = document.querySelector(".selected");
+    if (selected) {
+        selected.classList.remove("selected");
+    } else {
+        element.classList.add("selected");
+    }
+    selectedGenre = category;
+}
+
+function appendFilteredPosts(posts) {
+    let htmlTemplate = "";
+    for (const post of posts) {
+        htmlTemplate += `
+    <article>
+        <h3>${post.genre}</h3>
+    </article>
+    `;
+
+    }
+    document.querySelector('#searchFilteredSongs').innerHTML = htmlTemplate;
+}
 }

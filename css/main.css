@@ -213,6 +213,66 @@ article {
     border-radius: 12px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 2.5px 0 rgba(0, 0, 0, 0.19);
 }
+
+#filter {
+    z-index: 1;
+    display: none;
+    background-color:  #266376;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#filterFont {
+    font-style: italic;
+    color: #ffffff;
+    font-weight: lighter;
+    padding-bottom: 3%;
+}
+
+#filterFontOverskrift {
+    color: #ffffff;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    font-weight: bolder;
+}
+
+.flexFilterItems a {
+    color:black;
+    text-decoration: none;
+    margin: 1%;
+    background-color: white;
+}
+
+.filterButtons {
+    background-color: white;
+    border-radius: 5px;
+    margin: 2.5% 5% 2.5% 5%;
+    text-align: left;
+    padding-left: 5%;
+    
+}
+
+#closemenu {
+    position: absolute;
+    background-color: #ffffff;
+    width: 9%;
+    border-radius: 50%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 2.5% 3% 2.5% 3%;
+    margin: 2% 0 0 29%;
+}
+
+#closemenu img {
+  width: 100%;
+  margin-top: 7%;
+}
+
+#filterDiv img {
+    width: 20%;
+}
 /* øl ends */
 
 
