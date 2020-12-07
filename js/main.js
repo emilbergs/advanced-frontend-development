@@ -67,3 +67,25 @@ function appendPosts(posts) {
     }
     document.querySelector('.content').innerHTML = htmlTemplate
 }
+
+function bygSelv() {
+    // references to the input fields
+    let kasse1Input = document.querySelector("#kasse1").value;
+    let kasse2Input = document.querySelector("#kasse2").value;
+    let kasse3Input = document.querySelector("#kasse3").value;
+    let kasse4Input = document.querySelector("#kasse4").value;
+
+    let newUser = {
+        year: "2020",
+        yearCows: nrCowsInput.value,
+        kgMilk: kgMilkInput.value,
+        diesel: dieselInput.value,
+        electricity: electricityInput.value,
+        dryMatter: dryMatterInput.value,
+        selfFeed: selfFeedInput.value
+    };
+      firebase.auth().onAuthStateChanged(function (user) {
+      console.log(user.email);
+      year6.doc(user.email).set(newUser);
+    });
+}
