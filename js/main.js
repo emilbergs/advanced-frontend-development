@@ -66,7 +66,7 @@ function appendPosts(posts) {
         <h3>${post.name}</h3>
         <h4>${post.category}</h4>
         <img src="${post.image}" class="postImage"><br>
-        <button id="${post.id}">Læs mere</button>
+        <button id="${post.id}" onclick="searchFunctionModals(this.id); myButoon()" class="myBtn">Læs mere</button>
         </article>
     `;
     }
@@ -142,13 +142,14 @@ function appendFilteredPosts(posts) {
         <h3>${post.name}</h3>
         <h4>${post.category}</h4>
         <img src="${post.image}" class="postImage"><br>
-        <button id="${post.id}">Læs mere</button>
+        <button id="${post.id}" onclick="searchFunctionModals(this.id); myButoon()" class="myBtn">Læs mere</button>
     </article>
     `;
     }
     document.querySelector('#filteredContent').innerHTML = htmlTemplate;
 
 }
+
 
 let filterButtonOne = document.querySelector("#filterDivOne");
 filterButtonOne.addEventListener("click", showFilter);
@@ -242,3 +243,73 @@ function limitArray() {
         window.location = "#step3"
     }
 }
+
+//Modal //
+
+// Get the modal
+let modal = document.querySelector(".modal");
+
+// Get the button that opens the modal
+let btn = document.querySelectorAll(".myBtn");
+
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+function myButoon() {
+    modal.style.display = "block";
+}
+
+function myButoonn() {
+    modal.style.display = "none";
+}
+
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+function searchFunctionModals(selectedModals) {
+    console.log(selectedModals)
+    let filteredModals = [];
+    for (const post of _posts) {
+        if (post.id === selectedModals) {
+            filteredModals.push(post)
+            console.log(filteredModals)
+        }
+    }
+    appendFilteredModals(filteredModals);
+}
+function appendFilteredModals(posts) {
+    let htmlTemplate = "";
+    for (const post of posts) {
+        htmlTemplate += `
+    <article>
+    <span onclick="myButoonn()" class="close">&times;</span>
+        <h3>${post.name}</h3>
+        <h4>${post.category}</h4>
+        <img src="${post.image}" class="postImage"><br>
+        <p>${post.description}</p>
+        <h3>${post.pris}</h3>
+
+    </article>
+    `;
+    }
+    document.querySelector('.modal-content').innerHTML = htmlTemplate;
+
+}
+
+//modal ends//
