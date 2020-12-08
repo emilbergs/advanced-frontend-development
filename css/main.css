@@ -165,7 +165,6 @@ main {
     outline: 0;
     background-color: white;
     border-radius: 5px;
-    width: 70%;
     font-size: 1.3em;
 }
 
@@ -189,6 +188,14 @@ main {
 }
 .emailBtn {
     margin: 5% 0 5% 0;
+}
+#home h4 {
+    font-weight: 700;
+    color: #266376;
+    font-size: 1.3em;
+}
+#home label {
+    color: #5d5d5d;
 }
 
 /* home ends */
