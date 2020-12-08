@@ -184,7 +184,26 @@
                 <a href="#step2" onclick="removeBygSelv()"><i class="arrow left"></i></a>
                 <h1>Din ølkasse</h1>
                 <div id="olkasse">
-                <h3>KASSE</h2>
+                <h3>KASSE</h3>
+                <div id="contentKasse"></div>
+                <h3>ØL</h3>
+                <div id="contentOl"></div>
+                <div id="darkBox">
+                    <p>SAMLET PRIS DKK</p>
+                    <a href="#step1" onclick="removeBygSelv()">REDIGER DIN KASSE</a>
+                </div>
+                <h4>INDTAST DINE OPLYSNINGER</h4>
+                <input type="text" id="mobilInput" placeholder="MOBILNUMMER">
+                <input type="text" id="mailInput" placeholder="E-MAIL">
+                <form id="checkboxWrap"> 
+                    <input type="checkbox">
+                    <label for="checked" class="nyhedsbrevTekst">TILMELD DIG VÆSKEBALANCENS NYHEDSBREV OG SMS SERVICE. DU KAN TIL ENHVER TID FRAMELDE DIG IGEN.</label>
+                    <br>
+                    <input type="checkbox">
+                    <label for="checked" class="nyhedsbrevTekst">ACCEPTÉR FORRETNINGSBETINGELSER OG PERSONDATAPOLITIK, HERUNDER AT MOLSLINJEN A/S MODTAGER OPLYSNINGER OM DIN BOOKING</label>
+                </form>
+                <br>
+                <a href="#step4" id="reserverKnap">RESERVER DIN ØLKASSE</a>
                 </div>
             </div>
         </section>

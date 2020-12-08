@@ -499,8 +499,90 @@ h4{
     color: white;
     font-weight: 700;
     font-size: 1.8em;
-    height: 150px;
+    height: 830px;
     width: 336px;
+    border-radius: 5px;
+    margin: 30px 0 0 0;
+}
+
+#olkasse h3 {
+    text-align: left;
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 0.8em;
+}
+
+#olkasse h4 {
+    text-align: left;
+    margin-left: 10px;
+    font-weight: 700;
+    color: white;
+    font-size: 0.7em;
+}
+
+#darkBox {
+    height: 200px;
+    background-color: #205060;
+    
+}
+
+#darkBox p {
+    color: white;
+    font-size: 0.6em;
+    
+}
+
+#darkBox a {
+    border: solid 2px white;
+    
+    padding: 10px 55px 10px 55px;
+    color: white;
+    font-size: 0.6em;
+    font-weight: 700;
+}
+
+#mobilInput {
+    float: left;
+    height: 30px;
+    width: 150px;
+    margin: 10px 0 10px 10px;
+    padding: 5px 10px 5px 10px;
+    border: solid 1px white;
+    background-color: #2B6A80;
+    color: white;
+}
+
+#mailInput {
+    float: left;
+    height: 30px;
+    width: 285px;
+    margin: 10px 0 10px 10px;
+    padding: 5px 10px 5px 10px;
+    border: solid 1px white;
+    background-color: #2B6A80;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+#checkboxWrap {
+    margin-top: 135px;
+}
+
+.nyhedsbrevTekst {
+    font-size: 0.4em;
+
+}
+
+#reserverKnap {
+    background-color: #205060;
+    margin: 50px 0 0 0;
+    padding: 20px 40px 20px 40px;
+    color: white;
+    font-size: 0.6em;
+    font-weight: 700;
 }
 /* byg selv ends */
 /* main ends */
