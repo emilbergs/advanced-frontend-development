@@ -31,7 +31,10 @@
                     <a href="#kontakt" onclick="show()">Om os</a>
                 </li>
             </ul>
-            <p>Find os på</p>
+            <p>Find os på</p><br>
+            <div id=icons>
+                <a href="https://www.facebook.com/vaeskebalancen" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/vaeskebalancen/" target="_blank"><img src="img/insta.png" alt="Instagram"></a></div>
         </nav>
     </header>
     <main class="main">
@@ -54,7 +57,7 @@
                 <div>
                     <a href="#ol" class="gridBox" id="juleøl">
                         <h2 class="h2Tekst">Juleøl</h2>
-                    <img src="img/jul.png" id="jul" alt="juleøl">
+                    <img src="img/jul.png" id="christmas" alt="christmas">
                     </a>
                     
                 </div>
@@ -79,6 +82,18 @@
                 </form>
             </div>
         </section>
+              <!-- Trying to do a pop-up modal-->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+    
+    </div>
+  
+  </div>
+  <!-- Trying to do a pop-up modal stopping here-->
         <section id="ol" class="page">
             
             <h1>ØL</h1>
@@ -87,14 +102,41 @@
                 en hver smag. Gå på opdagelse her, 
                 inden du besøger vores butik i Aarhus.
             </h3>
-            <div id="filterDiv">
-                <a></a>
+            <div class="grid-ol-filter">
+                <div class="filteredBtns">
+                    <a onclick="noToggleMenu()" href="#ol">
+                        <p>Fjern filter</p>
+                    </a>
+                </div>
+                <div class="filteredBtns" id="filterDivOne">
+                <a onclick="showFilter()">
+                <p>Filtrer</p>
+            </a>
+        </div>
             </div>
-            <section id="filter"></section>
+
+
+            <section class="filter"></section>
+            <div class="content grid-container">
+
             </div>
         </section>
-        <section id="searchFilteredPosts" class="page">
-            <div class="filteredContent grid-container"></div>
+        <section id="searchFilteredContent" class="page">
+            <section class="filter "></section>
+
+            <div class="grid-ol-filter">
+                <div class="filteredBtns">
+            <a onclick="noToggleMenu()" href="#ol">
+                <p>Fjern filter</p>
+            </a>
+        </div>
+        <div id="filterDivTwo" class="filteredBtns">
+            <a onclick="showFilter()">
+                <p>Filtrer</p>
+            </a>
+        </div>
+            </div>
+            <div id="filteredContent" class="grid-container"></div>
         </section>
         <section id="bygSelv" class="page">
             <h1>BYG DIN EGEN ØLKASSE</h1><br>

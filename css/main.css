@@ -140,7 +140,7 @@ main {
     background-color:#266376;
 }
 
-#jul 
+#christmas 
 {
    width: 94%; 
 
@@ -212,6 +212,13 @@ ol {
     height: 42px;
     margin: 5% 0 5% 0;
 }
+#ol .grid-container h4{
+    color: darkgray;
+    font-weight: 500;
+    font-size: 0.8em;
+    height: 42px;
+    margin: 5% 0 5% 0;
+}
 #ol .grid-container button {
     width: 88px;
     height: 30px;
@@ -221,7 +228,34 @@ ol {
     border-radius: 40px;
     box-shadow: 3px 3px 3px #aaaaaa;
     margin: 5%;
+    
 }
+#searchFilteredContent .grid-container h3{
+    color: #266376;
+    font-weight: 700;
+    font-size: 1.1em;
+    height: 42px;
+    margin: 5% 0 5% 0;
+}
+
+#searchFilteredContent .grid-container h4{
+    color: darkgray;
+    font-weight: 500;
+    font-size: 0.8em;
+    height: 42px;
+    margin: 5% 0 5% 0;
+}
+
+#searchFilteredContent .grid-container button {
+    width: 88px;
+    height: 30px;
+    color: white;
+    background-color:#266376;
+    border: #266376;
+    border-radius: 40px;
+    margin: 5%;
+}
+
 article {
     border: 1px solid rgba(245, 245, 245, 0.5);
     margin: 4%;
@@ -229,13 +263,13 @@ article {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 2.5px 0 rgba(0, 0, 0, 0.19);
 }
 
-#filter {
+.filter {
     z-index: 1;
     display: none;
     background-color:  #266376;
     width: 100vw;
     height: 100vh;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
 }
@@ -265,8 +299,7 @@ article {
     background-color: white;
     border-radius: 5px;
     margin: 2.5% 5% 2.5% 5%;
-    text-align: left;
-    padding-left: 5%;
+    text-align: center;
     
 }
 
@@ -287,13 +320,87 @@ article {
 
 #filterDiv img {
     width: 20%;
+    
 }
+
+.grid-ol-filter {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 10%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+
+}
+
+.filteredBtns {
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 2.5px 0 rgba(0, 0, 0, 0.19);
+    padding: 6px 4px;
+   
+}
+
+.filteredBtns p {
+    color: #266376;
+    font-weight: bold;
+}
+
+/*Modal begins*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 12px;
+  }
+  
+  .modal-content article {
+    background-color: #fefefe;
+    border: 1px solid #888;
+    margin: 0;
+    padding: 5%;
+  }
+
+  .modal-content article p{
+  line-height: 1.5em;
+  }
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/*Modal ends*/
 /* øl ends */
 
 
 /* main ends */
 
-/* contanct section */
+/* contact section */
 
 #cover {
     width: 100%;
@@ -396,6 +503,5 @@ h4{
     width: 336px;
 }
 /* byg selv ends */
-
 /* main ends */
 /* main ends */
