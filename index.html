@@ -78,7 +78,7 @@
                     <input type="checkbox" id="accept" required>
                     <label for="accept">Jeg har læst og accepteret <a href="#" id="link">vilkår og betingelser</a></label><br>
                     <input class="emailBtn" type="button" id="emailBtn" value="Tilmeld" type="submit"
-                        onclick="createEmail(this.value)">
+                        onclick="createEmail1(this.value)">
                 </form>
             </div>
         </section>
@@ -140,7 +140,8 @@
         </section>
         <section id="bygSelv" class="page">
             <h1>BYG DIN EGEN ØLKASSE</h1><br>
-            <p>Du kan her sammensætte en kasse fyldt med dine favorit specialøl til fair priser.</p><br>
+            <div id="sådanGørDu">
+                <p>Du kan her sammensætte en kasse fyldt med dine favorit specialøl til fair priser.</p><br>
             <h4>Sådan gør du:</h4>
             <ol>
                 <li>Vælg størrelsen på din kasse</li>
@@ -149,14 +150,23 @@
                 <li>Vi pakker din ølkasse</li>
                 <li>Du afhenter</li>
             </ol>
-            <br>
-            <br>
-            <br>
+            </div>
             <a href="#step1" id="bygKasse">BYG KASSE</a>
         </section>
         <section id="step1" class="page">
-            <h3>BYG SELV</h3>
-            <p>progress line</p>
+            <div class="progressContainer">
+                <ul class="progress-bar">
+                  <li class="">
+                    <span class="current"></span>
+                  </li>
+                  <li class="">
+                    <span class=""></span>
+                  </li>
+                  <li>
+                    <span class=""></span>
+                  </li>
+                </ul>
+              </div>
             <div class="grid-h1">
                 <a href="#bygSelv"><i class="arrow left"></i></a>
                 <h1>Vælg kasse</h1>
@@ -169,21 +179,44 @@
             </div>
         </section>
         <section id="step2" class="page">
-            <h3>BYG SELV</h3>
-            <p>progress line</p>
+            <div class="progressContainer">
+                <ul class="progress-bar">
+                  <li class="completed">
+                    <span class="completed"></span>
+                  </li>
+                  <li class="current">
+                    <span class="current"></span>
+                  </li>
+                  <li>
+                    <span class=""></span>
+                  </li>
+                </ul>
+              </div>
             <div class="grid-h1">
                 <a href="#step1" onclick="removeBygSelv()"><i class="arrow left"></i></a>
                 <h1>Vælg øl</h1>
             </div>
-            <div id="bygSelvContent"></div>
+            <div id="bygSelvContent" class="grid-container"></div>
         </section>
         <section id="step3" class="page">
-            <h3>BYG SELV</h3>
-            <p>progress line</p>
+            <div class="progressContainer">
+                <ul class="progress-bar">
+                  <li class="completed">
+                    <span class="completed"></span>
+                  </li>
+                  <li class="completed">
+                    <span class="completed"></span>
+                  </li>
+                  <li class="current">
+                    <span class="current"></span>
+                  </li>
+                </ul>
+              </div>
             <div class="grid-h1">
-                <a href="#step2" onclick="removeBygSelv()"><i class="arrow left"></i></a>
+                <a href="#step2" onclick="removeBygSelvFunction()"><i class="arrow left"></i></a>
                 <h1>Din ølkasse</h1>
-                <div id="olkasse">
+            </div>
+            <div id="olkasse">
                 <h3>KASSE</h3>
                 <div id="contentKasse"></div>
                 <h3>ØL</h3>
@@ -203,9 +236,8 @@
                     <label for="checked" class="nyhedsbrevTekst">ACCEPTÉR FORRETNINGSBETINGELSER OG PERSONDATAPOLITIK, HERUNDER AT MOLSLINJEN A/S MODTAGER OPLYSNINGER OM DIN BOOKING</label>
                 </form>
                 <br>
-                <a href="#step4" id="reserverKnap">RESERVER DIN ØLKASSE</a>
+                <a href="#step4" id="reserverKnap" onclick="createEmail2()">RESERVER DIN ØLKASSE</a>
                 </div>
-            </div>
         </section>
         <section id="kontakt" class="page">
             <img src="img/coverpic.png" id="cover" alt="coverbillede">

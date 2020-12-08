@@ -15,6 +15,7 @@ let _posts = [];
 const db = firebase.firestore();
 const emailRef = db.collection("email");
 const postRef = db.collection("posts");
+const bestilRef = db.collection("bestillinger")
 
 const burger = document.querySelector(".burger");
 const white = document.querySelector(".white")
@@ -36,7 +37,7 @@ function show() {
     main.classList.toggle("hide")
 }
 
-function createEmail() {
+function createEmail1() {
     // references to the input fields
     let emailInput = document.querySelector("#yourEmail");
     let newEmail = {
@@ -45,6 +46,7 @@ function createEmail() {
     emailRef.add(newEmail);
     emailInput.value = "Thanks!";
 }
+
 
 postRef.onSnapshot(function (snapshotData) {
     let posts = [];
@@ -193,6 +195,17 @@ function removeBygSelv() {
 						items[i].checked=false;
 	}
 }
+function removeBygSelvFunction() {
+    document.querySelectorAll(".checkbox").checked = false;
+    while(bygSelvOlArray.length > 0) {
+        bygSelvOlArray.pop();
+    }
+    let items=document.querySelectorAll('.checkbox');
+				for(let i=0; i<items.length; i++){
+					if(items[i].type=='checkbox')
+						items[i].checked=false;
+	}
+}
 
 
 
@@ -203,10 +216,10 @@ function appendPostsBygSelv(posts) {
         <article id="${post.id}">
         <h3>${post.name}</h3>
         <img src="${post.image}" class="postImage"><br>
-        <a id="${post.id}">Læs mere</a><br>
+        <button id="${post.id}" onclick="searchFunctionModals(this.id); myButoon()">Læs mere</button><br>
         <form>
             <label for="checked">Vælg:</label>
-            <input type="checkbox" name="checked" id="${post.id}" class="checkbox" onclick="appendBygSelvOl(this.id); limitArray()">
+            <input type="checkbox" name="checked" id="${post.id}" class="checkbox" onclick="appendBygSelvOl(this.id); limitArray(); bygSelvFunction()">
         </form>
         </article>
     `;
@@ -245,6 +258,134 @@ function limitArray() {
     }
 }
 
+function bygSelvFunction() {
+    let chosenBeers = [];
+    for (const object of bygSelvOlArray) {
+        console.log(object)
+        for (const post of _posts) {
+            if (object === post.id) {
+                chosenBeers.push(post)
+                console.log(chosenBeers)
+            }
+        }
+    }
+    appendFilteredBygSelv(chosenBeers)
+}
+
+
+
+function appendFilteredBygSelv(posts) {
+    let htmlTemplate = "";
+    for (const post of posts) {
+        htmlTemplate += `
+    <article>
+        <h3>${post.name}</h3>
+        <h4>${post.category}</h4>
+        <img src="${post.image}" class="postImage"><br>
+    </article>
+    `;
+    }
+    document.querySelector('#contentOl').innerHTML = htmlTemplate;
+}
+
+let beersChosen = [];
+function createEmailChosenBeers() {
+
+}
+function createEmail2() {
+    let chosenBeers = [];
+    let mobilInput = document.querySelector("#mobilInput");
+    let emailInput = document.querySelector("#mailInput");
+    for (const object of bygSelvOlArray) {
+        console.log(object)
+        for (const post of _posts) {
+            if (object === post.id) {
+                chosenBeers.push(post)
+                console.log(chosenBeers)
+            }
+        }
+    }
+    function mailMobilInput() {
+        // references to the input field
+            if (bygSelvArray.includes("kasse1")) {
+                let ol1 = chosenBeers[0].name
+                let ol2 = chosenBeers[1].name
+                let ol3 = chosenBeers[2].name
+                let ol4 = chosenBeers[3].name
+                let newEmail = {
+                    email: emailInput.value,
+                    mobil: mobilInput.value,
+                    bestilling: [{ol1}, {ol2}, {ol3}, {ol4}]
+                };
+                bestilRef.add(newEmail);
+            } else if (bygSelvArray.includes("kasse2")) {
+                let ol1 = chosenBeers[0].name;
+                let ol2 = chosenBeers[1].name;
+                let ol3 = chosenBeers[2].name;
+                let ol4 = chosenBeers[3].name;
+                let ol5 = chosenBeers[4].name;
+                let ol6 = chosenBeers[5].name;
+                let ol7 = chosenBeers[6].name;
+                let ol8 = chosenBeers[7].name;
+                let newEmail = {
+                    email: emailInput.value,
+                    mobil: mobilInput.value,
+                    bestilling: [{ol1}, {ol2}, {ol3}, {ol4}, {ol5}, {ol6}, {ol7}, {ol8}]
+                };
+                bestilRef.add(newEmail);
+            } else if (bygSelvArray.includes("kasse3")) {
+                let ol1 = chosenBeers[0].name;
+                let ol2 = chosenBeers[1].name;
+                let ol3 = chosenBeers[2].name;
+                let ol4 = chosenBeers[3].name;
+                let ol5 = chosenBeers[4].name;
+                let ol6 = chosenBeers[5].name;
+                let ol7 = chosenBeers[6].name;
+                let ol8 = chosenBeers[7].name;
+                let ol9 = chosenBeers[8].name;
+                let ol10 = chosenBeers[9].name;
+                let ol11 = chosenBeers[10].name;
+                let ol12 = chosenBeers[11].name;
+                let newEmail = {
+                    email: emailInput.value,
+                    mobil: mobilInput.value,
+                    bestilling: [{ol1}, {ol2}, {ol3}, {ol4}, {ol5}, {ol6}, {ol7}, {ol8}, {ol9}, {ol10}, {ol11}, {ol12}]
+                };
+                bestilRef.add(newEmail);
+            } else if (bygSelvArray.includes("kasse4")) {
+                let ol1 = chosenBeers[0].name;
+                let ol2 = chosenBeers[1].name;
+                let ol3 = chosenBeers[2].name;
+                let ol4 = chosenBeers[3].name;
+                let ol5 = chosenBeers[4].name;
+                let ol6 = chosenBeers[5].name;
+                let ol7 = chosenBeers[6].name;
+                let ol8 = chosenBeers[7].name;
+                let ol9 = chosenBeers[8].name;
+                let ol10 = chosenBeers[9].name;
+                let ol11 = chosenBeers[10].name;
+                let ol12 = chosenBeers[11].name;
+                let ol13 = chosenBeers[12].name;
+                let ol14 = chosenBeers[13].name;
+                let ol15 = chosenBeers[14].name;
+                let ol16 = chosenBeers[15].name;
+                let newEmail = {
+                    email: emailInput.value,
+                    mobil: mobilInput.value,
+                    bestilling: [{ol1}, {ol2}, {ol3}, {ol4}, {ol5}, {ol6}, {ol7}, {ol8}, {ol9}, {ol10}, {ol11}, {ol12}, {ol13}, {ol14}, {ol15}, {ol16}]
+                };
+                bestilRef.add(newEmail);
+            }
+            
+        }
+        mailMobilInput();     
+    }  
+
+
+
+
+
+
 //Modal //
 
 // Get the modal
@@ -270,10 +411,6 @@ function myButoonn() {
 }
 
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {

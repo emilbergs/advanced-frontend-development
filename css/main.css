@@ -199,7 +199,6 @@ ol {
     display: grid;
     grid-template-columns: 47.5% 47.5%;
     column-gap: 5%;
-    height: 261px;
 }
 .postImage {
     height: 140px;
@@ -449,6 +448,10 @@ margin-bottom: 5%;
     grid-template-columns: 10% 73%;
     column-gap: 5%;
 }
+#olkasse h3 {
+    margin: 2% 0 2% 0;
+}
+
 
 .arrow {
     border: solid #1D4D5D;
@@ -493,10 +496,11 @@ margin-bottom: 5%;
 }
 #bygSelvContent {
     margin-top: 5%;
-    display: grid;
-    grid-template-columns: 45% 45%;
-    grid-column-gap: 10%;
-    grid-row-gap: 2%;
+    
+}
+#bygSelvContent h3 {
+    font-size: 1.2em;
+    height: 48px;
 }
 
 #olkasse {
@@ -504,10 +508,10 @@ margin-bottom: 5%;
     color: white;
     font-weight: 700;
     font-size: 1.8em;
-    height: 830px;
-    width: 336px;
     border-radius: 5px;
     margin: 30px 0 0 0;
+    padding: 0% 0 5% 0;
+    text-align: center;
 }
 
 #olkasse h3 {
@@ -589,6 +593,214 @@ margin-bottom: 5%;
     font-size: 0.6em;
     font-weight: 700;
 }
+#contentOl {
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    grid-column-gap: 5%;
+    grid-row-gap: 2%;
+    padding: 2% 0 5% 0;
+    width: 100%;
+}
+#step2 .grid-container button {
+    width: 88px;
+    height: 30px;
+    color: white;
+    background-color:#266376;
+    border: #266376;
+    border-radius: 40px;
+    box-shadow: 3px 3px 3px #aaaaaa;
+    margin: 5% 5% 10% 5%;
+    
+}
+#step2 .grid-container input {
+    height: 20px;
+    width: 20px;
+}
+#step2 .grid-container label {
+    font-size: 1.2em;
+}
+
 /* byg selv ends */
 /* main ends */
 /* main ends */
+/* Progress bar */
+.progressContainer {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 5% auto 10% auto;
+  }
+  .progress-bar {
+    width: 100%;
+  }
+  #step1 ul {
+    /* remove default ul styling */
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+#step1 li {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+#step1 li span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    /* Every span needs a border so things align */
+    border: 3px solid #f0f0f0;
+    background-color: #fff;
+    color: #fff;
+  }
+#step1 li:after {
+    background-color: #f0f0f0;
+    content: '';
+    height: 3px;
+    flex-grow: 1;
+  }
+#step1 li:last-child {
+    /*  This prevents the last li from adding space to the right of the span  */
+    width: auto;
+  }
+ #step1 li:last-child:after {
+    display: none;
+  }
+ #step1 li.completed:after {
+    background-color:#2B6A80;
+  }
+  #step1 span.completed {
+    border-color: #2B6A80;
+    background-color:#2B6A80;
+  }
+  #step1 span.current {
+    border-color: #2B6A80;
+    background-color:white;
+    color: #2B6A80;
+  }
+  #step2 ul {
+    /* remove default ul styling */
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+#step2 li {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+#step2 li span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    /* Every span needs a border so things align */
+    border: 3px solid #f0f0f0;
+    background-color: #fff;
+    color: #fff;
+  }
+#step2 li:after {
+    background-color: #f0f0f0;
+    content: '';
+    height: 3px;
+    flex-grow: 1;
+  }
+#step2 li:last-child {
+    /*  This prevents the last li from adding space to the right of the span  */
+    width: auto;
+  }
+ #step2 li:last-child:after {
+    display: none;
+  }
+ #step2 li.completed:after {
+    background-color:#2B6A80;
+  }
+  #step2 span.completed {
+    border-color: #2B6A80;
+    background-color:#2B6A80;
+  }
+  #step2 span.current {
+    border-color: #2B6A80;
+    background-color:white;
+    color: #2B6A80;
+  }
+#step3 ul {
+    /* remove default ul styling */
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+#step3 li {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+#step3 li span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    /* Every span needs a border so things align */
+    border: 3px solid #f0f0f0;
+    background-color: #fff;
+    color: #fff;
+  }
+#step3 li:after {
+    background-color: #f0f0f0;
+    content: '';
+    height: 3px;
+    flex-grow: 1;
+  }
+#step3 li:last-child {
+    /*  This prevents the last li from adding space to the right of the span  */
+    width: auto;
+  }
+ #step3 li:last-child:after {
+    display: none;
+  }
+ #step3 li.completed:after {
+    background-color:#2B6A80;
+  }
+  #step3 span.completed {
+    border-color: #2B6A80;
+    background-color:#2B6A80;
+  }
+  #step3 span.current {
+    border-color: #2B6A80;
+    background-color:white;
+    color: #2B6A80;
+  }
+  #sådanGørDu {
+      background-color: #2B6A80;
+      color: white;
+      width: 100%;
+  }
+  #sådanGørDu p{
+    background-color: #2B6A80;
+    color: white;
+    width: 100%;
+}
+#sådanGørDu li{
+    background-color: #2B6A80;
+    color: white;
+    width: 100%;
+}
+#sådanGørDu h4{
+    background-color: #2B6A80;
+    color: white;
+    width: 100%;
+    font-weight: 700;
+}
