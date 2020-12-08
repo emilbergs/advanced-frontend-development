@@ -303,6 +303,8 @@ function appendFilteredModals(posts) {
         <h3>${post.name}</h3>
         <h4>${post.category}</h4>
         <img src="${post.image}" class="postImage"><br>
+        <p>Alkoholprocent: ${post.alc}</p>
+        <p>${post.cl}</p>
         <p>${post.description}</p>
         <h3>${post.pris}</h3>
 
