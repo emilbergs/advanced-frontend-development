@@ -100,7 +100,7 @@ nav p {
 /* header ends */
 /* main */
 h1 {
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 600;
     color: #266376;
 }
@@ -156,7 +156,7 @@ main {
     height: 30px;
 }
 .h2Tekst1 {
-    padding: 44px 0;
+    padding: 55px 0;
     height: 30px;
 }
 #yourEmail {
@@ -173,7 +173,7 @@ main {
     padding: 2% 1% 2% 1%;
     outline: 0;
     color: white;
-    background-color: #1D4D5D;
+    background-color: #266376;
     border: #1D4D5D;
     border-radius: 12px;
     width: 35%;
@@ -542,7 +542,6 @@ margin-bottom: 5%;
 
 #darkBox {
     height: 200px;
-    background-color: #205060;
     
 }
 
@@ -829,12 +828,15 @@ margin-bottom: 5%;
 }
 #sådanGørDu li{
     width: 100%;
+    font-size: 1.1em;
+    line-height: 1.6em;
 }
 #sådanGørDu h4{
     margin: 0 auto 1% auto;
     width: 60%;
     text-align: left;
     font-weight: 700;
+    font-size: 1.4em;
     color: #2B6A80;
 }
 #aLittleMargin {
