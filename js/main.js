@@ -300,11 +300,13 @@ function appendFilteredModals(posts) {
         htmlTemplate += `
     <article>
     <span onclick="myButoonn()" class="close">&times;</span>
-        <h3>${post.name}</h3>
+        <h2>${post.name}</h2>
         <h4>${post.category}</h4>
+        </br>
         <img src="${post.image}" class="postImage"><br>
         <p>Alkoholprocent: ${post.alc}</p>
         <p>${post.cl}</p>
+        </br>
         <p>${post.description}</p>
         <h3>${post.pris}</h3>
 
