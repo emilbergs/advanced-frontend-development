@@ -134,7 +134,8 @@ main {
 }
 
 #popular {
-    width: 90%;
+    width: 61%;
+    margin-right: 7%;
 }
 #juleøl {
     background-color:#266376;
@@ -142,9 +143,7 @@ main {
 
 #christmas 
 {
-   width: 87.5%; 
-
-   
+   width: 87.5%;    
 }
 #nyheder {
     background-color:#1D4D5D;
@@ -154,6 +153,10 @@ main {
 }
 .h2Tekst {
     padding: 60px 0;
+    height: 30px;
+}
+.h2Tekst1 {
+    padding: 44px 0;
     height: 30px;
 }
 #yourEmail {
