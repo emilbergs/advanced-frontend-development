@@ -77,6 +77,8 @@ function appendPosts(posts) {
 function showFilter() {
     let filter = document.querySelector(".filter")
     filter.style.display="block";
+    document.querySelector("#ol").style.display = "none"
+    document.querySelector("#searchFilteredContent").style.display = "none"
     let template = /*html*/ `
     <h2 id="filterFontOverskrift">Filter</h2>
     <p id="filterFont">Her kan du filtrere gennem </br> vores udvalg af øl<p>
@@ -174,6 +176,8 @@ function noToggleMenu() {
     let filter = document.querySelector(".filter");
     filter.style.display = "none";
     document.body.style.overflowY = "auto";
+    document.querySelector("#ol").style.display = "block"
+    document.querySelector("#searchFilteredContent") = "block"
 }
 
 // Byg selv
