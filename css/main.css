@@ -984,7 +984,8 @@ margin-bottom: 5%;
 
     /* BygSelv */
     #box {
-    width: 40%;
+    width: 60%;
+    margin: 0% 0% 0% 45%;
 }
 /* FORSIDE */
 .margin {
@@ -1006,8 +1007,6 @@ margin-bottom: 5%;
 .logo {
     width: 7%;
 }
-
-
 
 #overskrift-forside-pc {
     margin-bottom: 3%;
@@ -1060,5 +1059,39 @@ header {
 #underoverskrift-forside-pc {
     margin: 5% 0 3% 0;
 }
+
+#grid-bygKas {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    column-gap: 5%;
+}
+
+.filterButtons {
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 2.5px 0 rgba(0, 0, 0, 0.19);
+}
+
+#filterFontOverskrift {
+    color: #266376;
+}
+
+#filterFont {
+    color: #5b5b5b;
+}
+
+.grid-ol-filter {
+    display: none;
+}
+
+#grid-container-pc-ol {
+    display: grid;
+    grid-template-columns: 20% 95%;
+    column-gap: 5%;
+}
+
+.contentOlPC .grid-container {
+    
+}
+
 /* FORSIDE slut*/
 } /* COMPUTER ENDS */
