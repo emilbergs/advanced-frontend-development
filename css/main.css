@@ -131,6 +131,7 @@ main {
 }
 #populære {
     background-color:#31829B;
+    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.19);
 }
 
 #popular {
@@ -139,6 +140,7 @@ main {
 }
 #juleøl {
     background-color:#266376;
+    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.19);
 }
 
 #christmas 
@@ -148,6 +150,7 @@ main {
 }
 #nyheder {
     background-color:#1D4D5D;
+    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.19);
 }
 #nyheder1 {
     width: 53%;
@@ -179,9 +182,10 @@ main {
     border-radius: 12px;
     width: 35%;
     font-size: 1.5em;
+    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.19);
 }
 #link {
-    color: blue;
+    color: #0645AD;
 }
 #nyhedsbrev {
     display: grid;
@@ -870,7 +874,6 @@ margin-bottom: 5%;
     margin-right: 10%;
     width: 60%;
 }
-
 #filterDivOne .grid-container{
     grid-template-columns: 70% 30%;
     column-gap: 0;
@@ -878,32 +881,36 @@ margin-bottom: 5%;
 
 /* step4 */
 #resTak {
-    padding: 5% 10% 5% 10%;
-    margin: 10vh 0 0 0;
-    background-color: #1F4B5B;
+    padding: 5% 10% 10% 10%;
+    margin: 10vh 0 0 0 ;
+    background-color: #2B6A80;
     color: white;
     border-radius: 5px;
 }
 
 #resTak span {
     font-weight: bolder;
-    color: #266376;
+    color: #ffff;
 }
 
 #resTak p {
     color: white;
+    font-size: 70%
 }
 
 #resTak a {
-    background-color: #1F4B5B;
+    background-color: #ffff;
     padding: 2% 15% 2% 15%;
-    color: white;
+    color: #5D5D5D;
     border-radius: 5px;
-    border: 2px white solid;
+    border: 1px white solid;
+    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.19);
+    
 }
 
 #resTak p {
     margin: 0 0 10% 0%;
+    
 }
 
 /* GOOGLE MAPS */
