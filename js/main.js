@@ -290,6 +290,7 @@ function appendFilteredBygSelv(posts) {
     `;
     }
     document.querySelector('#contentOl').innerHTML = htmlTemplate;
+    kasse()
 }
 
 let beersChosen = [];
@@ -385,6 +386,24 @@ function createEmail2() {
         mailMobilInput();     
     }  
 
+function kasse() {
+    if (bygSelvArray.includes("kasse1")) {
+        document.querySelector("#contentKasse").innerHTML = "4 øl - 150,-"
+        document.querySelector("#contentPris").innerHTML = "150,-"
+    } else if (bygSelvArray.includes("kasse2")) {
+        document.querySelector("#contentKasse").innerHTML = "8 øl - 300,-"
+        document.querySelector("#contentPris").innerHTML = "300,-"
+    } else if (bygSelvArray.includes("kasse3")) {
+        document.querySelector("#contentKasse").innerHTML = "12 øl - 499,-"
+        document.querySelector("#contentPris").innerHTML = "499,-"
+    } else if (bygSelvArray.includes("kasse4")) {
+        document.querySelector("#contentKasse").innerHTML = "16 øl - 800,-"
+        document.querySelector("#contentPris").innerHTML = "800,-"
+    } else {
+        document.querySelector("#contentKasse").innerHTML = ""
+        document.querySelector("#contentPris").innerHTML = ""
+    }
+}
 
 
 
