@@ -855,3 +855,33 @@ margin-bottom: 5%;
     grid-template-columns: 70% 30%;
     column-gap: 0;
 }
+
+/* step4 */
+#resTak {
+    padding: 5% 10% 5% 10%;
+    margin: 10vh 0 0 0;
+    background-color: #1F4B5B;
+    color: white;
+    border-radius: 5px;
+}
+
+#resTak span {
+    font-weight: bolder;
+    color: #266376;
+}
+
+#resTak p {
+    color: white;
+}
+
+#resTak a {
+    background-color: #1F4B5B;
+    padding: 2% 15% 2% 15%;
+    color: white;
+    border-radius: 5px;
+    border: 2px white solid;
+}
+
+#resTak p {
+    margin: 0 0 10% 0%;
+}
