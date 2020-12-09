@@ -360,6 +360,10 @@ article {
     font-weight: 500;
 }
 
+#olDescription {
+    margin-bottom: 3%;
+}
+
 /*Modal begins*/
 /* The Modal (background) */
 .modal {
@@ -941,6 +945,10 @@ margin-bottom: 5%;
 #wrapper {
     width: 100%;
 }
+
+.filterOlPC {
+    display: none;
+}
 /*Her ligges alt der skal display none fra desktop-- slut */
 /* DESKTOP QUERIES */
 /* MOBIL -> */
@@ -1094,8 +1102,8 @@ header {
     column-gap: 5%;
 }
 
-.contentOlPC .grid-container {
-    
+.filterOlPC {
+    display: block;
 }
 
 /* FORSIDE slut*/
