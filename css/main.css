@@ -921,7 +921,15 @@ margin-bottom: 5%;
     margin-bottom: 5%;
 }
 
+/*Her ligges alt der skal display none fra desktop */
+#home-pc {
+    display: none;
+}
 
+#wrapper {
+    width: 100%;
+}
+/*Her ligges alt der skal display none fra desktop-- slut */
 /* DESKTOP QUERIES */
 /* MOBIL -> */
 @media only screen and (min-width: 480px) {
@@ -971,5 +979,79 @@ margin-bottom: 5%;
     #box {
     width: 40%;
 }
+/* FORSIDE */
+.margin {
+    display: none;
+}
 
+#home-pc {
+    display: block;
+}
+#nyhedsbrev {
+    display: none;
+}
+
+#wrapper {
+   display: block; 
+
+}
+
+.logo {
+    width: 7%;
+}
+
+
+
+#overskrift-forside-pc {
+    margin-bottom: 3%;
+}
+
+
+video {
+    width: 85%;
+    
+}
+
+header {
+    padding: 0 10%;
+}
+#home-pc .grid-container h3{
+    color: #266376;
+    font-weight: 700;
+    font-size: 1.1em;
+    height: 42px;
+    margin: 5% 0 5% 0;
+}
+#home-pc .grid-container h4{
+    color: darkgray;
+    font-weight: 500;
+    font-size: 0.8em;
+    height: 42px;
+    margin: 5% 0 5% 0;
+}
+#home-pc .grid-container button {
+    width: 88px;
+    height: 30px;
+    color: white;
+    background-color:#266376;
+    border: #266376;
+    border-radius: 40px;
+    box-shadow: 3px 3px 3px #aaaaaa;
+    margin: 5%;
+    
+}
+
+#grid-container-pc-forside {
+    display: grid;
+    grid-template-columns: 20% 95%;
+    column-gap: 5%;
+}
+
+.modal-content {
+    width: 40%;
+}
+#underoverskrift-forside-pc {
+    margin: 5% 0 3% 0;
+}
+/* FORSIDE slut*/
 } /* COMPUTER ENDS */
