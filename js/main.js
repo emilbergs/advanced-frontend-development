@@ -455,9 +455,6 @@ function kasse() {
 }
 // pris og kasse ends 
 
-
-
-
 //Modal //
 
 // Get the modal

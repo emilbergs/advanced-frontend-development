@@ -624,15 +624,12 @@ margin-bottom: 5%;
 }
 #contentOl {
     display: grid;
-    grid-template-columns: 47.5% 47.5%;
-    grid-column-gap: 5%;
-    grid-row-gap: 2%;
+    grid-template-columns: 49% 49%;
+    grid-column-gap: 2%;
     padding: 2% 0 5% 0;
     width: 100%;
 }
-#contentOl article{
- height: 240px;
-}
+
 #step2 .grid-container h3{
     color: #266376;
     font-weight: 700;
