@@ -232,6 +232,7 @@ function noToggleMenu() {
 }
 
 // Byg selv
+// vælg kasse function
 let bygSelvArray = [];
 
 function appendBygSelv(kasse){
@@ -261,9 +262,9 @@ function removeBygSelvFunction() {
 						items[i].checked=false;
 	}
 }
+// kasse function ends 
 
-
-
+// Append øl til vælg side
 function appendPostsBygSelv(posts) {
     let htmlTemplate = "";
     for (let post of posts) {
@@ -282,6 +283,7 @@ function appendPostsBygSelv(posts) {
     document.querySelector('#bygSelvContent').innerHTML = htmlTemplate
 }
 
+// Vælg øl og skub ind i array
 let bygSelvOlArray = [];
 
 function addRemoveBeer(isChecked, beerId) {
@@ -308,7 +310,9 @@ function removeBeer (id) {
         }
     }
 }
+// Skub ind i array ends
 
+/* Til bekræftelse af reservation */
 function limitArray() {
     let kasse1 = 4;
     let kasse2 = 8;
@@ -330,22 +334,8 @@ function limitArray() {
     }
 }
 
-function bygSelvFunction() {
-    let chosenBeers = [];
-    for (const object of bygSelvOlArray) {
-        console.log(object)
-        for (const post of _posts) {
-            if (object === post.id) {
-                chosenBeers.push(post)
-                console.log(chosenBeers)
-            }
-        }
-    }
-    
-}
 
-
-
+// Se valgte øl på bekræftelse side
 function appendFilteredBygSelv(posts) {
     let htmlTemplate = "";
     for (const post of posts) {
@@ -360,31 +350,20 @@ function appendFilteredBygSelv(posts) {
     document.querySelector('#contentOl').innerHTML = htmlTemplate;
     kasse()
 }
-
-let beersChosen = [];
-function createEmailChosenBeers() {
-
-}
+// Se valgte øl ends
+// bekræftelse ends
+// Push bestilling til firebase
 function createEmail2() {
-    let chosenBeers = [];
     let mobilInput = document.querySelector("#mobilInput");
     let emailInput = document.querySelector("#mailInput");
-    for (const object of bygSelvOlArray) {
-        console.log(object)
-        for (const post of _posts) {
-            if (object === post.id) {
-                chosenBeers.push(post)
-                console.log(chosenBeers)
-            }
-        }
-    }
+
     function mailMobilInput() {
         // references to the input field
             if (bygSelvArray.includes("kasse1")) {
-                let ol1 = chosenBeers[0].name
-                let ol2 = chosenBeers[1].name
-                let ol3 = chosenBeers[2].name
-                let ol4 = chosenBeers[3].name
+                let ol1 = bygSelvOlArray[0].name
+                let ol2 = bygSelvOlArray[1].name
+                let ol3 = bygSelvOlArray[2].name
+                let ol4 = bygSelvOlArray[3].name
                 let newEmail = {
                     email: emailInput.value,
                     mobil: mobilInput.value,
@@ -392,14 +371,14 @@ function createEmail2() {
                 };
                 bestilRef.add(newEmail);
             } else if (bygSelvArray.includes("kasse2")) {
-                let ol1 = chosenBeers[0].name;
-                let ol2 = chosenBeers[1].name;
-                let ol3 = chosenBeers[2].name;
-                let ol4 = chosenBeers[3].name;
-                let ol5 = chosenBeers[4].name;
-                let ol6 = chosenBeers[5].name;
-                let ol7 = chosenBeers[6].name;
-                let ol8 = chosenBeers[7].name;
+                let ol1 = bygSelvOlArray[0].name;
+                let ol2 = bygSelvOlArray[1].name;
+                let ol3 = bygSelvOlArray[2].name;
+                let ol4 = bygSelvOlArray[3].name;
+                let ol5 = bygSelvOlArray[4].name;
+                let ol6 = bygSelvOlArray[5].name;
+                let ol7 = bygSelvOlArray[6].name;
+                let ol8 = bygSelvOlArray[7].name;
                 let newEmail = {
                     email: emailInput.value,
                     mobil: mobilInput.value,
@@ -407,18 +386,18 @@ function createEmail2() {
                 };
                 bestilRef.add(newEmail);
             } else if (bygSelvArray.includes("kasse3")) {
-                let ol1 = chosenBeers[0].name;
-                let ol2 = chosenBeers[1].name;
-                let ol3 = chosenBeers[2].name;
-                let ol4 = chosenBeers[3].name;
-                let ol5 = chosenBeers[4].name;
-                let ol6 = chosenBeers[5].name;
-                let ol7 = chosenBeers[6].name;
-                let ol8 = chosenBeers[7].name;
-                let ol9 = chosenBeers[8].name;
-                let ol10 = chosenBeers[9].name;
-                let ol11 = chosenBeers[10].name;
-                let ol12 = chosenBeers[11].name;
+                let ol1 = bygSelvOlArray[0].name;
+                let ol2 = bygSelvOlArray[1].name;
+                let ol3 = bygSelvOlArray[2].name;
+                let ol4 = bygSelvOlArray[3].name;
+                let ol5 = bygSelvOlArray[4].name;
+                let ol6 = bygSelvOlArray[5].name;
+                let ol7 = bygSelvOlArray[6].name;
+                let ol8 = bygSelvOlArray[7].name;
+                let ol9 = bygSelvOlArray[8].name;
+                let ol10 = bygSelvOlArray[9].name;
+                let ol11 = bygSelvOlArray[10].name;
+                let ol12 = bygSelvOlArray[11].name;
                 let newEmail = {
                     email: emailInput.value,
                     mobil: mobilInput.value,
@@ -426,22 +405,22 @@ function createEmail2() {
                 };
                 bestilRef.add(newEmail);
             } else if (bygSelvArray.includes("kasse4")) {
-                let ol1 = chosenBeers[0].name;
-                let ol2 = chosenBeers[1].name;
-                let ol3 = chosenBeers[2].name;
-                let ol4 = chosenBeers[3].name;
-                let ol5 = chosenBeers[4].name;
-                let ol6 = chosenBeers[5].name;
-                let ol7 = chosenBeers[6].name;
-                let ol8 = chosenBeers[7].name;
-                let ol9 = chosenBeers[8].name;
-                let ol10 = chosenBeers[9].name;
-                let ol11 = chosenBeers[10].name;
-                let ol12 = chosenBeers[11].name;
-                let ol13 = chosenBeers[12].name;
-                let ol14 = chosenBeers[13].name;
-                let ol15 = chosenBeers[14].name;
-                let ol16 = chosenBeers[15].name;
+                let ol1 = bygSelvOlArray[0].name;
+                let ol2 = bygSelvOlArray[1].name;
+                let ol3 = bygSelvOlArray[2].name;
+                let ol4 = bygSelvOlArray[3].name;
+                let ol5 = bygSelvOlArray[4].name;
+                let ol6 = bygSelvOlArray[5].name;
+                let ol7 = bygSelvOlArray[6].name;
+                let ol8 = bygSelvOlArray[7].name;
+                let ol9 = bygSelvOlArray[8].name;
+                let ol10 = bygSelvOlArray[9].name;
+                let ol11 = bygSelvOlArray[10].name;
+                let ol12 = bygSelvOlArray[11].name;
+                let ol13 = bygSelvOlArray[12].name;
+                let ol14 = bygSelvOlArray[13].name;
+                let ol15 = bygSelvOlArray[14].name;
+                let ol16 = bygSelvOlArray[15].name;
                 let newEmail = {
                     email: emailInput.value,
                     mobil: mobilInput.value,
@@ -453,7 +432,9 @@ function createEmail2() {
         }
         mailMobilInput();     
     }  
+// push bestilling ends
 
+// Få pris og kasse ind på bekræftelse side
 function kasse() {
     if (bygSelvArray.includes("kasse1")) {
         document.querySelector("#contentKasse").innerHTML = "4 øl - 150,-"
@@ -472,7 +453,7 @@ function kasse() {
         document.querySelector("#contentPris").innerHTML = ""
     }
 }
-
+// pris og kasse ends 
 
 
 
