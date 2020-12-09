@@ -121,7 +121,7 @@ main {
     grid-template-columns: 50% 50%;
     color: white;
     border-radius: 5px;
-    margin: 5% auto;
+    margin: 5%;
     height: 100%;
 }
 .gridBox img {
@@ -135,7 +135,7 @@ main {
 
 #popular {
     width: 82%;
-    margin-right: 5%
+    margin: 5%;
 }
 #juleøl {
     background-color:#266376;
@@ -143,14 +143,16 @@ main {
 
 #christmas 
 {
-   width: 87.5%;    
+   width: 87.5%;
+   margin: 0.5%;    
 }
 #nyheder {
     background-color:#1D4D5D;
 }
 #nyheder1 {
     width: 53%;
-    margin-right: 13%
+    padding: 4%;
+    margin-right: 18%;  
 }
 .h2Tekst {
     padding: 35% 0 0 0;
@@ -864,6 +866,7 @@ margin-bottom: 5%;
     margin-right: 10%;
     width: 60%;
 }
+
 #filterDivOne .grid-container{
     grid-template-columns: 70% 30%;
     column-gap: 0;
