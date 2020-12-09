@@ -9,6 +9,7 @@
     <title>Væskebalancen</title>
 </head>
 <body onhashchange="pageChange()">
+    <div id="wrapper">
     <header>
         <a href="#home"><img src="img/logo.png" alt="Væskebalancens logo" class="logo"></a>
         <div class="burger">
@@ -41,6 +42,18 @@
     </header>
     <main class="main">
         <section id="home" class="page">
+            <div id="home-pc">
+                <h1 id="overskrift-forside-pc">VÆSKEBALANCEN</h1>
+                <video id="videosound" src="video/00011.mp4" autoplay muted loop></video>
+                <h1 id="underoverskrift-forside-pc">NYHEDER</h1>
+               <div id="grid-container-pc-forside">
+                <div class="filterPC">
+                </div>
+                <div class="contentPC grid-container">
+                </div>
+            </div>
+            </div>
+
             <div class="margin">
                 <h1>VÆSKEBALANCEN</h1><br>
                 <p>Herinde giver vi dig et hurtigt overblik 
@@ -100,7 +113,7 @@
         <section id="ol" class="page">
             
             <h1>ØL</h1>
-            <p>Se vores kæmpe udvalg af specialøl
+            <p id="olDescription">Se vores kæmpe udvalg af specialøl
                 Hos Væskebalancen har vi noget til
                 en hver smag. Gå på opdagelse her, 
                 inden du besøger vores butik i Aarhus.
@@ -119,32 +132,45 @@
             </a>
         </div>
             </div>
-            <div class="content grid-container">
 
+            <div class="grid-container-pc-ol">
+                <div class="filterOlPC">
+                </div>
+                <div class="content grid-container">
+                </div>
             </div>
+
         </section>
         <section id="searchFilteredContent" class="page">
-            <section class="filter "></section>
+            <section class="filter"></section>
 
             <div class="grid-ol-filter">
+                <div id="filterDivTwo" class="filteredBtns">
+                    <a onclick="showFilter()">
+                        <p>Filtrer</p>
+                    </a>
+                </div>
                 <div class="filteredBtns">
             <a onclick="noToggleMenu()" href="#ol">
                 <p>Fjern filter</p>
             </a>
         </div>
-        <div id="filterDivTwo" class="filteredBtns">
-            <a onclick="showFilter()">
-                <p>Filtrer</p>
-            </a>
-        </div>
+     
             </div>
+            <div class="grid-container-pc-ol">
+            <div id="filteredFilterPC"></div>
             <div id="filteredContent" class="grid-container"></div>
+        </div>
         </section>
+
+
         <section id="bygSelv" class="page">
             <h1>BYG DIN EGEN ØLKASSE</h1><br>
             <div id="sådanGørDu">
                 <p>Du kan her sammensætte en kasse fyldt med dine favorit specialøl til fair priser.</p><br>
-                <img src="img/box.png" alt="olbox" id="box"> 
+                <div id="grid-bygKas">
+                <img src="img/box.png" alt="olbox" id="box">
+                <div>
                 <h4>Sådan gør du:</h4>
             <ul>
                 <li>Vælg størrelsen på din kasse</li>
@@ -153,8 +179,11 @@
                 <li>Vi pakker din ølkasse</li>
                 <li>Du afhenter</li>
             </ul>
+        </div>
+        </div>
             </div>
             <a href="#step1" id="bygKasse">BYG KASSE</a>
+            
        
         </section>
         <section id="step1" class="page">
@@ -254,7 +283,7 @@
             <h2>Tak for din reservation!</h2>
             <h3>Vi pakker din ølkasse hurtigst muligt, og så giver vi dig besked lige så snart pakken er til afhentning.</h3>
             <span>HUSK</span>
-            <p>Afhentning foregår kun i vores butik på Vestergade NR, 8000 Aarhus C.</p>
+            <br><p>Afhentning foregår kun i vores butik på Vestergade NR, 8000 Aarhus C.</p>
             <a href="#home" id="tilbageStart">TILBAGE TIL START</a>
         </div>
         </section>
@@ -294,6 +323,7 @@ E-mail:  vaeskebalancen@gmail.com
     <div class="mapouter"><div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=vestergade%2064&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://embedgooglemap.net/mapv2/"></a></div></div>  </section>
     </main>
     <footer></footer>
+</div>
     <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
     <script src="js/spa.js"></script>

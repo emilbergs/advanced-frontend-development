@@ -73,6 +73,7 @@ function appendPosts(posts) {
     `;
     }
     document.querySelector('.content').innerHTML = htmlTemplate
+    document.querySelector('.contentPC').innerHTML = htmlTemplate
 }
 function showFilter() {
     let filter = document.querySelector(".filter")
@@ -120,6 +121,56 @@ function showFilter() {
     document.querySelector(".filter").innerHTML = template;
     
 }
+function showFilterPC() {
+    let filter = document.querySelector(".filterPC")
+    let template = /*html*/ `
+    <h2 id="filterFontOverskrift">Filter</h2>
+    <p id="filterFont">Her kan du filtrere gennem </br> vores udvalg af øl<p>
+    <div class="flexFilter">
+        <div class="flexFilterItems">
+            <div class="filterButtons">
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Juleøl'); searchFunctionGenre('Juleøl');" class="notselected"><p>Juleøl</p></a>
+            </div>
+            <div class="filterButtons">
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Sour'); searchFunctionGenre('Sour');" class="notselected"><p>Sour</p></a>
+            </div>
+            <div class="filterButtons">
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Barley Wine'); searchFunctionGenre('Barley Wine');" class="notselected"><p>Barley wine</p></a>
+            </div>
+            <div class="filterButtons">
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'IPA'); searchFunctionGenre('IPA');" class="notselected"><p>IPA</p></a>
+            </div>
+            <div class="filterButtons">
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Stout'); searchFunctionGenre('Stout');" class="notselected"><p>Stout</p></a>
+            </div>
+            <div class="filterButtons">
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Porter'); searchFunctionGenre('Porter');" class="notselected"><p>Porter</p></a>
+            </div>
+            <div class="filterButtons">
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Belgisk Ale'); searchFunctionGenre('Belgisk Ale');" class="notselected"><p>Belgisk Ale</p></a>
+            </div>
+            <div class="filterButtons">
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Hvedeøl'); searchFunctionGenre('Hvedeøl');" class="notselected"><p>Hvedeøl</p></a>
+            </div>
+            <div class="filterButtons">
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Lager'); searchFunctionGenre('Lager');" class="notselected"><p>Lager</p></a>
+            </div>
+            
+        </div>
+    </div>
+    
+    `;
+    filter.innerHTML = template;
+    document.querySelector("#filteredFilterPC").innerHTML = template;
+    document.querySelector(".filterOlPC").innerHTML = template;
+    
+}
+showFilterPC();
+
+/* FILTER ON PC ON OL */
+
+
+
 let selectedCategory = "";
 
 

@@ -121,7 +121,7 @@ main {
     grid-template-columns: 50% 50%;
     color: white;
     border-radius: 5px;
-    margin: 5% auto;
+    margin: 5%;
     height: 100%;
 }
 .gridBox img {
@@ -131,26 +131,31 @@ main {
 }
 #populære {
     background-color:#31829B;
+    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.19);
 }
 
 #popular {
     width: 82%;
-    margin-right: 5%
+    margin: 5%;
 }
 #juleøl {
     background-color:#266376;
+    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.19);
 }
 
 #christmas 
 {
-   width: 87.5%;    
+   width: 87.5%;
+   margin: 0.5%;    
 }
 #nyheder {
     background-color:#1D4D5D;
+    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.19);
 }
 #nyheder1 {
     width: 53%;
-    margin-right: 13%
+    padding: 4%;
+    margin-right: 18%;  
 }
 .h2Tekst {
     padding: 35% 0 0 0;
@@ -177,9 +182,10 @@ main {
     border-radius: 12px;
     width: 35%;
     font-size: 1.5em;
+    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.19);
 }
 #link {
-    color: blue;
+    color: #0645AD;
 }
 #nyhedsbrev {
     display: grid;
@@ -352,6 +358,10 @@ article {
 .filteredBtns p {
     color: #266376;
     font-weight: 500;
+}
+
+#olDescription {
+    margin-bottom: 3%;
 }
 
 /*Modal begins*/
@@ -869,32 +879,38 @@ margin-bottom: 5%;
 
 /* step4 */
 #resTak {
-    padding: 5% 10% 5% 10%;
-    margin: 10vh 0 0 0;
-    background-color: #1F4B5B;
+    padding: 5% 10% 20% 10%;
+    margin: 10vh 0 0 0 ;
+    background-color: #2B6A80;
     color: white;
     border-radius: 5px;
+    font-size: 2vh;
 }
 
 #resTak span {
     font-weight: bolder;
-    color: #266376;
+    color: #ffff;
 }
 
 #resTak p {
     color: white;
+ padding: 4%;
+    font-size: 1.7vh;
 }
 
 #resTak a {
-    background-color: #1F4B5B;
+    background-color: #ffff;
     padding: 2% 15% 2% 15%;
-    color: white;
+    color: #5D5D5D;
     border-radius: 5px;
-    border: 2px white solid;
+    border: 1px white solid;
+    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.19);
+    
 }
 
 #resTak p {
     margin: 0 0 10% 0%;
+    
 }
 
 /* GOOGLE MAPS */
@@ -919,7 +935,24 @@ margin-bottom: 5%;
     margin-bottom: 5%;
 }
 
+/*Her ligges alt der skal display none fra desktop */
+#home-pc {
+    display: none;
+}
 
+#wrapper {
+    width: 100%;
+}
+
+.filterOlPC {
+    display: none;
+}
+
+#filteredFilterPC {
+    display: none;
+}
+
+/*Her ligges alt der skal display none fra desktop-- slut */
 /* DESKTOP QUERIES */
 /* MOBIL -> */
 @media only screen and (min-width: 480px) {
@@ -967,7 +1000,118 @@ margin-bottom: 5%;
 
     /* BygSelv */
     #box {
-    width: 40%;
+    width: 60%;
+    margin: 0% 0% 0% 45%;
+}
+/* FORSIDE */
+.margin {
+    display: none;
 }
 
+#home-pc {
+    display: block;
+}
+#nyhedsbrev {
+    display: none;
+}
+
+#wrapper {
+   display: block; 
+
+}
+
+#filteredFilterPC {
+    display: block;
+}
+
+.logo {
+    width: 7%;
+}
+
+#overskrift-forside-pc {
+    margin-bottom: 3%;
+}
+
+
+video {
+    width: 85%;
+    
+}
+
+header {
+    padding: 0 10%;
+}
+#home-pc .grid-container h3{
+    color: #266376;
+    font-weight: 700;
+    font-size: 1.1em;
+    height: 42px;
+    margin: 5% 0 5% 0;
+}
+#home-pc .grid-container h4{
+    color: darkgray;
+    font-weight: 500;
+    font-size: 0.8em;
+    height: 42px;
+    margin: 5% 0 5% 0;
+}
+#home-pc .grid-container button {
+    width: 88px;
+    height: 30px;
+    color: white;
+    background-color:#266376;
+    border: #266376;
+    border-radius: 40px;
+    box-shadow: 3px 3px 3px #aaaaaa;
+    margin: 5%;
+    
+}
+
+#grid-container-pc-forside {
+    display: grid;
+    grid-template-columns: 20% 95%;
+    column-gap: 5%;
+}
+
+.modal-content {
+    width: 40%;
+}
+#underoverskrift-forside-pc {
+    margin: 5% 0 3% 0;
+}
+
+#grid-bygKas {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    column-gap: 5%;
+}
+
+.filterButtons {
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 2.5px 0 rgba(0, 0, 0, 0.19);
+}
+
+#filterFontOverskrift {
+    color: #266376;
+}
+
+#filterFont {
+    color: #5b5b5b;
+}
+
+.grid-ol-filter {
+    display: none;
+}
+
+.grid-container-pc-ol {
+    display: grid;
+    grid-template-columns: 20% 95%;
+    column-gap: 5%;
+}
+
+.filterOlPC {
+    display: block;
+}
+
+/* FORSIDE slut*/
 } /* COMPUTER ENDS */
