@@ -131,6 +131,7 @@ main {
 }
 #populære {
     background-color:#31829B;
+    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.19);
 }
 
 #popular {
@@ -139,6 +140,7 @@ main {
 }
 #juleøl {
     background-color:#266376;
+    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.19);
 }
 
 #christmas 
@@ -148,6 +150,7 @@ main {
 }
 #nyheder {
     background-color:#1D4D5D;
+    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.19);
 }
 #nyheder1 {
     width: 53%;
@@ -179,9 +182,10 @@ main {
     border-radius: 12px;
     width: 35%;
     font-size: 1.5em;
+    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.19);
 }
 #link {
-    color: blue;
+    color: #0645AD;
 }
 #nyhedsbrev {
     display: grid;
@@ -878,7 +882,6 @@ margin-bottom: 5%;
     background-color: #2B6A80;
     color: white;
     border-radius: 5px;
-    font-size: 86%
 }
 
 #resTak span {
@@ -888,16 +891,16 @@ margin-bottom: 5%;
 
 #resTak p {
     color: white;
-    font-size: 66%
+    font-size: 70%
 }
 
 #resTak a {
     background-color: #ffff;
     padding: 2% 15% 2% 15%;
     color: #5D5D5D;
-    border-radius: 25px;
+    border-radius: 5px;
     border: 1px white solid;
-    box-shadow: 5px 5px 5px #aaaaaa;
+    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.19);
     
 }
 
