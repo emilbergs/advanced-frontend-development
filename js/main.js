@@ -223,7 +223,7 @@ function appendPostsBygSelv(posts) {
         <button id="${post.id}" onclick="searchFunctionModals(this.id); myButoon()">Læs mere</button><br>
         <form>
             <label for="checked">Vælg:</label>
-            <input type="checkbox" name="checked" id="${post.id}" class="checkbox" onclick="appendBygSelvOl(this.id); limitArray(); bygSelvFunction()">
+            <input type="checkbox" name="checked" id="${post.id}" class="checkbox" onclick="addRemoveBeer(this.checked, this.id)">
         </form>
         </article>
     `;
@@ -233,11 +233,28 @@ function appendPostsBygSelv(posts) {
 
 let bygSelvOlArray = [];
 
-function appendBygSelvOl(ol) {
-    let checkBox = document.querySelector(".checkbox");
-    if (checkBox.checked == true){
-    bygSelvOlArray.push(ol)
+function addRemoveBeer(isChecked, beerId) {
+    if (isChecked) {
+        addBeer(beerId);
+    } else {
+        removeBeer(beerId);
+    }
+}
+function addBeer(id) {
+    for (const post of _posts) {
+        if (id === post.id) {
+            bygSelvOlArray.push(post);
+        }
+    }
     console.log(bygSelvOlArray)
+    appendFilteredBygSelv(bygSelvOlArray)
+    limitArray();
+}
+function removeBeer (id) {
+    for (const post of bygSelvOlArray) {
+        if (id === post.id) {
+            bygSelvOlArray.push(post);
+        }
     }
 }
 
@@ -273,7 +290,7 @@ function bygSelvFunction() {
             }
         }
     }
-    appendFilteredBygSelv(chosenBeers)
+    
 }
 
 
