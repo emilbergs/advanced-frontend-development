@@ -230,18 +230,21 @@
                     <div id="contentPris"></div>
                     <a href="#step1" onclick="removeBygSelv()">REDIGER DIN KASSE</a>
                 </div>
-                <h4>INDTAST DINE OPLYSNINGER</h4>
+                <div id="oplysninger">
+                    <p>INDTAST DINE OPLYSNINGER</p>
                 <input type="text" id="mobilInput" placeholder="MOBILNUMMER">
                 <input type="text" id="mailInput" placeholder="E-MAIL">
                 <form id="checkboxWrap"> 
                     <input type="checkbox">
-                    <label for="checked" class="nyhedsbrevTekst">TILMELD DIG VÆSKEBALANCENS NYHEDSBREV OG SMS SERVICE. DU KAN TIL ENHVER TID FRAMELDE DIG IGEN.</label>
+                    <label for="checked" class="nyhedsbrevTekst">TILMELD DIG VÆSKEBALANCENS <br>NYHEDSBREV OG SMS SERVICE. DU KAN TIL ENHVER TID FRAMELDE DIG IGEN.</label>
                     <br>
                     <input type="checkbox">
                     <label for="checked" class="nyhedsbrevTekst">ACCEPTÉR FORRETNINGSBETINGELSER OG PERSONDATAPOLITIK, HERUNDER AT MOLSLINJEN A/S MODTAGER OPLYSNINGER OM DIN BOOKING</label>
                 </form>
                 <br>
                 <a href="#step4" id="reserverKnap" onclick="createEmail2()">RESERVER DIN ØLKASSE</a>
+                </div>
+                
                 </div>
                 <!---KONTAKT SIDEN-->
         </section>
