@@ -149,7 +149,8 @@ main {
     background-color:#1D4D5D;
 }
 #nyheder1 {
-    width: 80%;
+    width: 53%;
+    margin-right: 13%
 }
 .h2Tekst {
     padding: 60px 0;
