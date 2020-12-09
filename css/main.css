@@ -881,11 +881,12 @@ margin-bottom: 5%;
 
 /* step4 */
 #resTak {
-    padding: 5% 10% 10% 10%;
+    padding: 5% 10% 20% 10%;
     margin: 10vh 0 0 0 ;
     background-color: #2B6A80;
     color: white;
     border-radius: 5px;
+    font-size: 2vh;
 }
 
 #resTak span {
@@ -895,7 +896,8 @@ margin-bottom: 5%;
 
 #resTak p {
     color: white;
-    font-size: 70%
+ padding: 4%;
+    font-size: 1.7vh;
 }
 
 #resTak a {
