@@ -960,7 +960,6 @@ margin-bottom: 5%;
 
     .first h4 {
         font-size: 20px;
-        letter-spacing: 3px;
         position: relative;
         margin: 20px;
         font-size: 1.6em;
@@ -999,7 +998,6 @@ margin-bottom: 5%;
 
 .second h4 {
     font-size: 20px;
-    letter-spacing: 3px;
     position: relative;
     margin-bottom: 20px;
     font-size: 1.6em;
@@ -1046,7 +1044,6 @@ margin-bottom: 5%;
 
     .third h4 {
         font-size: 20px;
-        letter-spacing: 3px;
         position: relative;
         margin-bottom: 20px;
         font-size: 1.6em;
@@ -1154,6 +1151,80 @@ border: 1px solid grey;
     width: 50%;
 }
 
+.grid-bygSelv {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.first {
+    margin-top: 70px;
+}
+
+#yourEmail1 {
+    padding: 0.5% 3% 0.5% 3%;
+}
+
+.second p {
+    padding: 0 30% 0 30%;
+}
+
+.third img {
+    width: 6%;
+}
+
+#olkasse {
+    padding: 2% 0 2% 0;
+}
+
+#contentOl {
+    grid-column-gap: 0;
+    margin-left: 5px;
+}
+
+#contentKasse {
+    background-color: #1D4D5D;
+    padding: 5%;
+    margin: 0 35% 5% 35%;
+    border-radius: 10px;
+}
+
+#contentPris {
+    margin: 5% 0 8% 0;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+#darkBox {
+    padding: 5% 0 5% 0;
+}
+
+#oplysninger {
+    padding: 3% 0 3% 0;
+}
+
+#mobilInput {
+    margin: 10px 0 10px 110px;
+}
+
+#checkboxWrap {
+    display: flex;
+    flex-direction: row;
+    padding: 0 15% 0 15%;
+    margin-top: 120px;
+}
+
+#checkboxWrap input {
+    margin-top: 2%;
+}
+
+.nyhedsbrevTekst {
+    margin: 0 5% 0 5%;
+}
+
+#resTak {
+    margin: 2% 0 0 0;
+}
+
 } /* TABLET ENDS */
 
 /* COMPUTER -> */
@@ -1163,6 +1234,7 @@ border: 1px solid grey;
             display: grid;
             grid-template-columns: 20% 20% 20% 20%;
             column-gap: 0%;
+            margin-left: 16.5%;
     }
 
     /* BygSelv */
@@ -1316,9 +1388,113 @@ header {
 
 #grid-bygKas {
     display: grid;
-    grid-template-columns: 40% 40%;
-    column-gap: 5%;
+    grid-template-columns: 35% 35%;
+    margin: 0 0 0 22%;
 }
+
+#box {
+    margin: 8% 0 0 10%;
+}
+
+.grid-bygSelv {
+    width: 40%;
+    margin-left: 30.3%;
+    margin-top: 2%;
+}
+
+.grid-bygSelv a {
+    opacity: 0.9;
+    transition:all 0.3s ease;
+}
+
+.grid-bygSelv a:hover {
+    opacity: 1;
+}
+
+.progressContainer {
+    margin-bottom: 5%;
+}
+
+#olkasse h3 {
+    margin: 1% 0 1% 0;
+}
+
+#contentOl {
+    grid-template-columns: 25% 25% 25% 25%;
+    padding-top: 0%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#contentKasse {
+    padding: 3%;
+}
+
+#contentPris {
+    font-size: 2.5em;
+    margin: 1% 0 2% 0;
+}
+
+#darkBox {
+    padding: 4% 0 5% 0;
+}
+
+#darkBox a {
+    transition:all 0.3s ease;
+}
+
+#darkBox a:hover {
+    box-shadow:
+                1px 1px #53a7ea,
+                2px 2px #53a7ea,
+                3px 3px #53a7ea;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
+
+#oplysninger p {
+    margin: 0 0 2% 0;
+}
+
+#mailInput {
+    margin: 0 0 0 1%;
+}
+
+#mobilInput {
+    margin: 0 0 0 34%;
+}
+
+#checkboxWrap {
+    display: flex;
+    flex-direction: row;
+    padding: 0 30% 0 32%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+#checkboxWrap input {
+    margin-top: 1%;
+    ;
+}
+
+.nyhedsbrevTekst {
+    padding: 0 2% 0 2%;
+    margin: 0;
+}
+
+#reserverKnap {
+    transition:all 0.3s ease;
+}
+
+#reserverKnap:hover {
+    box-shadow:
+                1px 1px #53a7ea,
+                2px 2px #53a7ea,
+                3px 3px #53a7ea;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
+
 
 .filterButtons {
     background-color: white;
