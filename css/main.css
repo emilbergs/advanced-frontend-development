@@ -172,6 +172,16 @@ main {
     font-size: 1.3em;
 }
 
+#yourEmail1 {
+    border: 1px solid grey;
+    padding: 3% 5% 3% 5%;
+    outline: 0;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 1.3em;
+}
+
+
 #emailBtn {
     border: 1px solid grey;
     padding: 2% 1% 2% 1%;
