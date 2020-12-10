@@ -451,6 +451,10 @@ margin-bottom: 5%;
 }
 
 /* byg selv begins */
+#afhent {
+    font-weight: 600;
+}
+
 #contentKasse {
     margin: 5% 0 12.5% 0;
 }
@@ -901,6 +905,7 @@ margin-bottom: 5%;
     padding: 2% 15% 2% 15%;
     color: #ffff;
     font-weight: 550;
+    font-size: 1.7vh;
     
 }
 
@@ -999,6 +1004,7 @@ margin-bottom: 5%;
     width: 60%;
     margin: 0% 0% 0% 45%;
 }
+/* næst sidste step i byg selv - reservation */
 
 #mailInput {
     margin: 0% 0% 0% 33%;
@@ -1007,7 +1013,21 @@ margin-bottom: 5%;
     margin: 0% 0% 1% 41%;
 }
 
+/* sidste step i byg selv - tak for reservation */
+#resTak a {
+    font-size: 1.4em;
+}
+
+#resTak {
+    margin: 2% 10% 2% 10%; 
+}
+#resTak span {
+    font-weight: bolder;
+    color: #ffff;
+    font-size: 1.3em;
+}
 /* FORSIDE */
+
 .margin {
     display: none;
 }
