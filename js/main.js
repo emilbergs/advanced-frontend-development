@@ -22,12 +22,15 @@ const white = document.querySelector(".white")
 const nav = document.querySelector(".navBar")
 const logo = document.querySelector(".logo")
 const main = document.querySelector(".main")
+const footer = document.querySelector("footer");
 
 burger.addEventListener("click", function(){
     burger.classList.toggle("open");
     nav.classList.toggle("show")
     logo.classList.toggle("hide")
     main.classList.toggle("hide")
+    footer.classList.toggle("hide")
+    
 });
 
 function show() {
@@ -35,6 +38,7 @@ function show() {
     nav.classList.toggle("show")
     logo.classList.toggle("hide")
     main.classList.toggle("hide")
+    footer.classList.toggle("hide")
 }
 
 function createEmail1() {
