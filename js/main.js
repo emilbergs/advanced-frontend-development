@@ -90,31 +90,31 @@ function showFilter() {
     <div class="flexFilter">
         <div class="flexFilterItems">
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Juleøl'); searchFunctionGenre('Juleøl'); noToggleMenu();" class="notselected"><p>Juleøl</p></a>
+            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Juleøl'); noToggleMenu();" class="notselected"><p>Juleøl</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Sour'); searchFunctionGenre('Sour'); noToggleMenu();" class="notselected"><p>Sour</p></a>
+            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Sour'); noToggleMenu();" class="notselected"><p>Sour</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Barley Wine'); searchFunctionGenre('Barley Wine'); noToggleMenu();" class="notselected"><p>Barley wine</p></a>
+            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Barley Wine'); noToggleMenu();" class="notselected"><p>Barley wine</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'IPA'); searchFunctionGenre('IPA'); noToggleMenu();" class="notselected"><p>IPA</p></a>
+            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'IPA'); noToggleMenu();" class="notselected"><p>IPA</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Stout'); searchFunctionGenre('Stout'); noToggleMenu();" class="notselected"><p>Stout</p></a>
+            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Stout'); noToggleMenu();" class="notselected"><p>Stout</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Porter'); searchFunctionGenre('Porter'); noToggleMenu();" class="notselected"><p>Porter</p></a>
+            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Porter'); noToggleMenu();" class="notselected"><p>Porter</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Belgisk Ale'); searchFunctionGenre('Belgisk Ale'); noToggleMenu();" class="notselected"><p>Belgisk Ale</p></a>
+            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Belgisk Ale'); noToggleMenu();" class="notselected"><p>Belgisk Ale</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Hvedeøl'); searchFunctionGenre('Hvedeøl'); noToggleMenu();" class="notselected"><p>Hvedeøl</p></a>
+            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Hvedeøl'); noToggleMenu();" class="notselected"><p>Hvedeøl</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Lager'); searchFunctionGenre('Lager'); noToggleMenu();" class="notselected"><p>Lager</p></a>
+            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Lager'); noToggleMenu();" class="notselected"><p>Lager</p></a>
             </div>
             
         </div>
@@ -133,31 +133,31 @@ function showFilterPC() {
     <div class="flexFilter">
         <div class="flexFilterItems">
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Juleøl'); searchFunctionGenre('Juleøl');" class="notselected"><p>Juleøl</p></a>
+            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Juleøl');" class="notselected"><p>Juleøl</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Sour'); searchFunctionGenre('Sour');" class="notselected"><p>Sour</p></a>
+            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Sour');" class="notselected"><p>Sour</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Barley Wine'); searchFunctionGenre('Barley Wine');" class="notselected"><p>Barley wine</p></a>
+            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Barley Wine');" class="notselected"><p>Barley wine</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'IPA'); searchFunctionGenre('IPA');" class="notselected"><p>IPA</p></a>
+            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'IPA');" class="notselected"><p>IPA</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Stout'); searchFunctionGenre('Stout');" class="notselected"><p>Stout</p></a>
+            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Stout');" class="notselected"><p>Stout</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Porter'); searchFunctionGenre('Porter');" class="notselected"><p>Porter</p></a>
+            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Porter');" class="notselected"><p>Porter</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Belgisk Ale'); searchFunctionGenre('Belgisk Ale');" class="notselected"><p>Belgisk Ale</p></a>
+            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Belgisk Ale');" class="notselected"><p>Belgisk Ale</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Hvedeøl'); searchFunctionGenre('Hvedeøl');" class="notselected"><p>Hvedeøl</p></a>
+            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Hvedeøl');" class="notselected"><p>Hvedeøl</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Lager'); searchFunctionGenre('Lager');" class="notselected"><p>Lager</p></a>
+            <a href="#searchFilteredContent" onclick="selectedFilter(this, 'Lager');" class="notselected"><p>Lager</p></a>
             </div>
             
         </div>
@@ -223,7 +223,9 @@ function selectedFilter(element, category) {
     } else {
         element.classList.add("selected");
     }
+    document.querySelector("#ol").style.display = "none"
     selectedCategory = category;
+    searchFunctionGenre(category);
 }
 
 // Remove filter
@@ -231,8 +233,7 @@ function noToggleMenu() {
     let filter = document.querySelector(".filter");
     filter.style.display = "none";
     document.body.style.overflowY = "auto";
-    document.querySelector("#ol").style.display = "block"
-    document.querySelector("#searchFilteredContent") = "block"
+    document.querySelector("#searchFilteredContent").style.display = "block"
 }
 
 // Byg selv
