@@ -319,13 +319,11 @@ article {
 
 #closemenu {
     position: fixed;
-    background-color: #ffffff;
     width: 9%;
     border-radius: 50%;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     padding: 2.5% 3% 2.5% 3%;
     right: 10px;
-    bottom: 10px;
+    top: 10px;
 }
 
 #closemenu img {
@@ -1032,6 +1030,7 @@ margin-bottom: 5%;
 .third {
     margin-top: 40px;
     color: #fff;
+
 }
 
 
