@@ -1135,7 +1135,7 @@ footer img {
         /* ØL SIDE */
         .grid-container {
             display: grid;
-            grid-template-columns: 18% 18% 18% 18%;
+            grid-template-columns: 20% 20% 20% 20%;
             column-gap: 0%;
     }
 
@@ -1277,7 +1277,7 @@ header {
 
 #grid-container-pc-forside {
     display: grid;
-    grid-template-columns: 20% 95%;
+    grid-template-columns: 20% 80%;
     column-gap: 5%;
 }
 
@@ -1313,7 +1313,7 @@ header {
 
 .grid-container-pc-ol {
     display: grid;
-    grid-template-columns: 20% 95%;
+    grid-template-columns: 20% 80%;
     column-gap: 5%;
 }
 
