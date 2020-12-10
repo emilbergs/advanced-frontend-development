@@ -51,6 +51,16 @@ function createEmail1() {
     emailInput.value = "Thanks!";
 }
 
+function createEmail3() {
+    // references to the input fields
+    let emailInput = document.querySelector("#yourEmail1");
+    let newEmail = {
+        email: emailInput.value,
+    };
+    emailRef.add(newEmail);
+    emailInput.value = "Thanks!";
+}
+
 
 postRef.onSnapshot(function (snapshotData) {
     let posts = [];
