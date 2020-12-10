@@ -967,7 +967,7 @@ margin-bottom: 5%;
             height: 2px;
             position: absolute;
             bottom: 0;
-            left: 0;
+            left: 40%;
         }
 
     .first p {
@@ -1032,7 +1032,6 @@ margin-bottom: 5%;
 .third {
     margin-top: 40px;
     color: #fff;
-    text-align: right;
 }
 
 
@@ -1054,7 +1053,7 @@ margin-bottom: 5%;
             height: 2px;
             position: absolute;
             bottom: 0;
-            left: 80%;
+            left: 40%;
         }
 
 
@@ -1066,6 +1065,10 @@ margin-bottom: 5%;
         font-size: 14px;
         transition: 0.2s;
     }
+
+footer img {
+    margin: 0 0 5% 0;
+}
 
 
 /*Her ligges alt der skal display none fra desktop */
@@ -1231,11 +1234,13 @@ margin-bottom: 5%;
     display: none;
 }
 
-
 #overskrift-forside-pc {
     margin-bottom: 3%;
 }
 
+#icons {
+    grid-template-columns: 5% 5%;
+}
 
 video {
     width: 85%;
