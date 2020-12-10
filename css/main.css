@@ -965,7 +965,7 @@ margin-bottom: 5%;
             height: 2px;
             position: absolute;
             bottom: 0;
-            left: 0;
+            left: 40%;
         }
 
     .first p {
@@ -1030,7 +1030,7 @@ margin-bottom: 5%;
 .third {
     margin-top: 40px;
     color: #fff;
-    text-align: right;
+
 }
 
 
@@ -1052,7 +1052,7 @@ margin-bottom: 5%;
             height: 2px;
             position: absolute;
             bottom: 0;
-            left: 80%;
+            left: 40%;
         }
 
 
