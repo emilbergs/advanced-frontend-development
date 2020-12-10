@@ -224,7 +224,6 @@ function selectedFilter(element, category) {
         element.classList.add("selected");
     }
     document.querySelector("#ol").style.display = "none"
-    selectedCategory = category;
     searchFunctionGenre(category);
 }
 
