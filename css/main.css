@@ -947,6 +947,11 @@ margin-bottom: 5%;
 .filterOlPC {
     display: none;
 }
+
+#flex1 {
+    display: none;
+}
+
 /*Her ligges alt der skal display none fra desktop-- slut */
 /* DESKTOP QUERIES */
 /* MOBIL -> */
@@ -1018,6 +1023,54 @@ margin-bottom: 5%;
 .logo {
     width: 7%;
 }
+
+.burger {
+    display: none;
+}
+
+
+
+
+.navBar {
+    display: block;
+    width: 40%;
+    position: absolute;
+    right: 5px;
+}
+
+nav {
+    background-color: white;
+    height: 15vh;
+   
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-row-gap: 1.33%;
+    height: 15vh;
+
+    
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 5% 10% 5% 10%;
+  
+}
+
+nav ul li a {
+    color: #266376;
+    font-size: 0.4em;
+    text-transform: uppercase;
+}
+
+#flex1 {
+    display: block;
+    
+}
+
+
 
 #overskrift-forside-pc {
     margin-bottom: 3%;
