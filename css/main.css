@@ -936,24 +936,6 @@ margin-bottom: 5%;
     margin-bottom: 5%;
 }
 
-/*Her ligges alt der skal display none fra desktop */
-#home-pc {
-    display: none;
-}
-
-#wrapper {
-    width: 100%;
-}
-
-.filterOlPC {
-    display: none;
-}
-
-
-#filteredFilterPC {
-    display: none;
-}
-
 /* FOOTER */
 
 .footer {
@@ -963,7 +945,7 @@ margin-bottom: 5%;
 }
 
 .first {
-    margin-top: 40px;
+    margin-top: 110px;
     margin-bottom: 50px;
     color: #ffff;
 }
@@ -972,10 +954,10 @@ margin-bottom: 5%;
         font-size: 20px;
         letter-spacing: 3px;
         position: relative;
-        margin-bottom: 20px;
+        margin: 20px;
         font-size: 1.6em;
         color: #fff;
-        padding-bottom: 0.5em;
+        padding: 50px 0 0.5em 0;
     }
 
         .first h4::after {
@@ -1086,7 +1068,27 @@ margin-bottom: 5%;
     }
 
 
+/*Her ligges alt der skal display none fra desktop */
+#home-pc {
+    display: none;
+}
 
+#wrapper {
+    width: 100%;
+}
+
+.filterOlPC {
+    display: none;
+}
+
+
+#filteredFilterPC {
+    display: none;
+}
+
+#pcNav {
+    display: none;
+}
 
 
 /*Her ligges alt der skal display none fra desktop-- slut */
@@ -1192,52 +1194,42 @@ margin-bottom: 5%;
     display: none;
 }
 
+/* COMPUTER MENU BAR */
 
-
-
-.navBar {
+#pcNav {
     display: block;
-    width: 40%;
     position: absolute;
-    right: 5px;
+    top: 40px;
+    right: 40px;
+    width: 30%;
 }
 
-nav {
-    background-color: white;
-    height: 15vh;
-   
-}
-
-nav ul {
+#pcNavUl {
     display: grid;
     grid-template-columns: 24% 24% 24% 24%;
-    grid-row-gap: 1.33%;
     height: 15vh;
-
-    
 }
 
-nav ul li {
+.pcNavLi {
     list-style-type: none;
-    padding: 5% 10% 5% 10%;
-  
+    padding: 5% 5% 5% 5%;
 }
 
-nav ul li a {
+.pcNavLi a {
     color: #266376;
-    font-size: 0.4em;
+    font-size: 1em;
     text-transform: uppercase;
+    font-weight: 400;
 }
 
+.pcNavLi a:hover {
+    font-weight: bolder;
+}
+
+/* COMPUTER MENU ENDS */
 #aLittleMargin {
     display: none;
 }
-
-#flex1 {
-    display: block;
-    
-}
-
 
 
 #overskrift-forside-pc {

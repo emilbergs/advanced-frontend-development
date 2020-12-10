@@ -18,7 +18,7 @@
             <span class="white"></span>
         </div>
 
-        <nav class="navBar tabbar" id="flex1">
+        <nav class="navBar tabbar">
             <ul>
                 <li>
                     <a href="#home" onclick="show()">Forside</a>
@@ -40,6 +40,15 @@
             </div>
             
         </nav>
+
+        <div id="pcNav">
+            <ul id="pcNavUl">
+                <li class="pcNavLi"><a href="#home">Forside</a></li>
+                <li class="pcNavLi"><a href="#ol">Øl</a></li>
+                <li class="pcNavLi"><a href="#bygSelv">Byg selv</a></li>
+                <li class="pcNavLi"><a href="#kontakt">Om os</a></li>
+            </ul>
+        </div>
     </header>
     <main class="main">
         <section id="home" class="page">
@@ -170,7 +179,6 @@
             <div id="sådanGørDu">
                 <p>Du kan her sammensætte en kasse fyldt med dine favorit specialøl til fair priser.</p><br>
                 <div id="grid-bygKas">
-                <img src="img/box.png" alt="olbox" id="box">
                 <div>
                 <h4>Sådan gør du:</h4>
             <ul>
@@ -181,6 +189,7 @@
                 <li id="afhent">Du afhenter</li>
             </ul>
         </div>
+        <img src="img/box.png" alt="olbox" id="box">
         </div>
             </div>
             <a href="#step1" id="bygKasse">BYG KASSE</a>
