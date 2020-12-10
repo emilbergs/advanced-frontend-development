@@ -120,7 +120,7 @@ function showFilter() {
         </div>
     </div>
     
-    <a id="closemenu" onclick="noToggleMenu()"><img src="img/closeFilterIcon.png"></a>
+    <a id="closemenu" onclick="removeMenu()"><img src="img/closeFilterIcon.png"></a>
     `;
     document.querySelector(".filter").innerHTML = template;
     
@@ -234,6 +234,13 @@ function noToggleMenu() {
     filter.style.display = "none";
     document.body.style.overflowY = "auto";
     document.querySelector("#searchFilteredContent").style.display = "block"
+}
+function removeMenu() {
+    let filter = document.querySelector(".filter");
+    filter.style.display = "none";
+    document.body.style.overflowY = "auto";
+    document.querySelector("#ol").style.display = "block"
+    window.location = "#ol"
 }
 
 // Byg selv
