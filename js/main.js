@@ -234,7 +234,6 @@ function selectedFilter(element, category) {
         element.classList.add("selected");
     }
     document.querySelector("#ol").style.display = "none"
-    selectedCategory = category;
     searchFunctionGenre(category);
 }
 
@@ -545,4 +544,36 @@ function appendFilteredModals(posts) {
 
 }
 
+function appendFilteredModals18(posts) {
+    let htmlTemplate = "";
+    for (const post of posts) {
+        htmlTemplate += `
+    <article>
+    <span onclick="myButoonn()" class="close">&times;</span>
+        <h2>${post.name}</h2>
+        <h4>${post.category}</h4>
+        </br>
+        <img src="${post.image}" class="postImage"><br>
+        <p>Alkoholprocent: ${post.alc}</p>
+        <p>${post.cl}</p>
+        </br>
+        <p>${post.description}</p>
+        <h3>${post.pris}</h3>
+
+    </article>
+    `;
+    }
+    document.querySelector('.modal-content').innerHTML = htmlTemplate;
+
+}
+
+function PopUp(hideOrshow) {
+    if (hideOrshow == 'hide') document.getElementById('ac-wrapper').style.display = "none";
+    else document.getElementById('ac-wrapper').removeAttribute('style');
+}
+window.onload = function () {
+    setTimeout(function () {
+        PopUp('show');
+    }, 500);
+}
 //modal ends//
