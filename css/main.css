@@ -953,6 +953,165 @@ margin-bottom: 5%;
     display: none;
 }
 
+/* FOOTER */
+
+.footer {
+    background-color: #2B6A80;
+    background-size: cover;
+    
+}
+
+.first {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: #ffff;
+}
+
+    .first h4 {
+        font-size: 20px;
+        letter-spacing: 3px;
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 1.6em;
+        color: #fff;
+        padding-bottom: 0.5em;
+    }
+
+        .first h4::after {
+            content: '';
+            background: #31829B;
+            width: 20%;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+    .first p {
+        font-size: 14px;
+        color: #fff;
+    }
+
+.second {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: #ffff;
+    text-align: center;
+}
+
+.second2 {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: #ffff;
+    text-align: center;
+}
+
+.second h4 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    color: #fff;
+    padding-bottom: 0.5em;
+}
+
+    .second h4::after {
+        content: '';
+        background: #31829B;
+        width: 20%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 40%;
+    }
+
+
+.second p, .second2 p {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: regular;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+    .second a:hover, .second2 a:hover {
+        color: #fff;
+        transition: 0.2s;
+        text-shadow: 1px 1px 20px rgba(0,0,0,1);
+        text-decoration: none
+
+    }
+
+
+
+.third {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: #fff;
+    text-align: right;
+}
+
+
+    .third h4 {
+        font-size: 20px;
+        letter-spacing: 3px;
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 1.6em;
+        color: #fff;
+        padding-bottom: 0.5em;
+    }
+
+
+        .third h4::after {
+            content: '';
+            background: #31829B;
+            width: 20%;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 80%;
+        }
+
+
+    .third a {
+        color: #fff;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-size: 14px;
+        transition: 0.2s;
+    }
+
+
+
+@media screen and (max-width:1000px) {
+    .first {
+        text-align: center;
+    }
+    .second {
+        margin: 5%;
+    }
+
+        .first h4::after {
+            left: 40%;
+        }
+}
+
+@media screen and (max-width:1000px) {
+    .third {
+        text-align: center;
+    }
+
+        .third h4::after {
+            left: 40% !important;
+        }
+}
+
+
+
 /*Her ligges alt der skal display none fra desktop-- slut */
 /* DESKTOP QUERIES */
 /* MOBIL -> */
@@ -1136,6 +1295,8 @@ header {
 .filterOlPC {
     display: block;
 }
+
+/* FOOTER */
 
 /* FORSIDE slut*/
 } /* COMPUTER ENDS */
