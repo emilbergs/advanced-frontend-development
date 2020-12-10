@@ -129,31 +129,31 @@ function showFilterPC() {
     <div class="flexFilter">
         <div class="flexFilterItems">
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="changeColor(this, 'Juleøl'); searchFunctionGenre('Juleøl'); noToggleMenu();" class="notselected"><p>Juleøl</p></a>
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Juleøl'); searchFunctionGenre('Juleøl');" class="notselected"><p>Juleøl</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="changeColor(this, 'Sour'); searchFunctionGenre('Sour'); noToggleMenu();" class="notselected"><p>Sour</p></a>
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Sour'); searchFunctionGenre('Sour');" class="notselected"><p>Sour</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="changeColor(this, 'Barley Wine'); searchFunctionGenre('Barley Wine'); noToggleMenu();" class="notselected"><p>Barley wine</p></a>
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Barley Wine'); searchFunctionGenre('Barley Wine');" class="notselected"><p>Barley wine</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="changeColor(this, 'IPA'); searchFunctionGenre('IPA'); noToggleMenu();" class="notselected"><p>IPA</p></a>
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'IPA'); searchFunctionGenre('IPA');" class="notselected"><p>IPA</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="changeColor(this, 'Stout'); searchFunctionGenre('Stout'); noToggleMenu();" class="notselected"><p>Stout</p></a>
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Stout'); searchFunctionGenre('Stout');" class="notselected"><p>Stout</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="changeColor(this, 'Porter'); searchFunctionGenre('Porter'); noToggleMenu();" class="notselected"><p>Porter</p></a>
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Porter'); searchFunctionGenre('Porter');" class="notselected"><p>Porter</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="changeColor(this, 'Belgisk Ale'); searchFunctionGenre('Belgisk Ale'); noToggleMenu();" class="notselected"><p>Belgisk Ale</p></a>
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Belgisk Ale'); searchFunctionGenre('Belgisk Ale');" class="notselected"><p>Belgisk Ale</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="changeColor(this, 'Hvedeøl'); searchFunctionGenre('Hvedeøl'); noToggleMenu();" class="notselected"><p>Hvedeøl</p></a>
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Hvedeøl'); searchFunctionGenre('Hvedeøl');" class="notselected"><p>Hvedeøl</p></a>
             </div>
             <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="changeColor(this, 'Lager'); searchFunctionGenre('Lager'); noToggleMenu();" class="notselected"><p>Lager</p></a>
+            <a href="#searchFilteredContent" onclick="changeColor(this, 'Lager'); searchFunctionGenre('Lager');" class="notselected"><p>Lager</p></a>
             </div>
             
         </div>
@@ -161,54 +161,13 @@ function showFilterPC() {
     
     `;
     filter.innerHTML = template;
+    document.querySelector("#filteredFilterPC").innerHTML = template;
+    document.querySelector(".filterOlPC").innerHTML = template;
     
 }
 showFilterPC();
 
-
-function showFilterOlPC() {
-    let filter = document.querySelector(".filterOlPC")
-    let template = /*html*/ `
-    <h2 id="filterFontOverskrift">Filter</h2>
-    <p id="filterFont">Her kan du filtrere gennem </br> vores udvalg af øl<p>
-    <div class="flexFilter">
-        <div class="flexFilterItems">
-            <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="changeColor(this, 'Juleøl'); searchFunctionGenre('Juleøl'); noToggleMenu();" class="notselected"><p>Juleøl</p></a>
-            </div>
-            <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="changeColor(this, 'Sour'); searchFunctionGenre('Sour'); noToggleMenu();" class="notselected"><p>Sour</p></a>
-            </div>
-            <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="changeColor(this, 'Barley Wine'); searchFunctionGenre('Barley Wine'); noToggleMenu();" class="notselected"><p>Barley wine</p></a>
-            </div>
-            <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="changeColor(this, 'IPA'); searchFunctionGenre('IPA'); noToggleMenu();" class="notselected"><p>IPA</p></a>
-            </div>
-            <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="changeColor(this, 'Stout'); searchFunctionGenre('Stout'); noToggleMenu();" class="notselected"><p>Stout</p></a>
-            </div>
-            <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="changeColor(this, 'Porter'); searchFunctionGenre('Porter'); noToggleMenu();" class="notselected"><p>Porter</p></a>
-            </div>
-            <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="changeColor(this, 'Belgisk Ale'); searchFunctionGenre('Belgisk Ale'); noToggleMenu();" class="notselected"><p>Belgisk Ale</p></a>
-            </div>
-            <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="changeColor(this, 'Hvedeøl'); searchFunctionGenre('Hvedeøl'); noToggleMenu();" class="notselected"><p>Hvedeøl</p></a>
-            </div>
-            <div class="filterButtons">
-            <a href="#searchFilteredContent" onclick="changeColor(this, 'Lager'); searchFunctionGenre('Lager'); noToggleMenu();" class="notselected"><p>Lager</p></a>
-            </div>
-            
-        </div>
-    </div>
-    
-    `;
-    filter.innerHTML = template;
-    
-}
-showFilterOlPC();
+/* FILTER ON PC ON OL */
 
 
 
@@ -273,6 +232,7 @@ function noToggleMenu() {
 }
 
 // Byg selv
+// vælg kasse function
 let bygSelvArray = [];
 
 function appendBygSelv(kasse){
@@ -302,9 +262,9 @@ function removeBygSelvFunction() {
 						items[i].checked=false;
 	}
 }
+// kasse function ends 
 
-
-
+// Append øl til vælg side
 function appendPostsBygSelv(posts) {
     let htmlTemplate = "";
     for (let post of posts) {
@@ -315,7 +275,7 @@ function appendPostsBygSelv(posts) {
         <button id="${post.id}" onclick="searchFunctionModals(this.id); myButoon()">Læs mere</button><br>
         <form>
             <label for="checked">Vælg:</label>
-            <input type="checkbox" name="checked" id="${post.id}" class="checkbox" onclick="appendBygSelvOl(this.id); limitArray(); bygSelvFunction()">
+            <input type="checkbox" name="checked" id="${post.id}" class="checkbox" onclick="addRemoveBeer(this.checked, this.id)">
         </form>
         </article>
     `;
@@ -323,16 +283,36 @@ function appendPostsBygSelv(posts) {
     document.querySelector('#bygSelvContent').innerHTML = htmlTemplate
 }
 
+// Vælg øl og skub ind i array
 let bygSelvOlArray = [];
 
-function appendBygSelvOl(ol) {
-    let checkBox = document.querySelector(".checkbox");
-    if (checkBox.checked == true){
-    bygSelvOlArray.push(ol)
-    console.log(bygSelvOlArray)
+function addRemoveBeer(isChecked, beerId) {
+    if (isChecked) {
+        addBeer(beerId);
+    } else {
+        removeBeer(beerId);
     }
 }
+function addBeer(id) {
+    for (const post of _posts) {
+        if (id === post.id) {
+            bygSelvOlArray.push(post);
+        }
+    }
+    console.log(bygSelvOlArray)
+    appendFilteredBygSelv(bygSelvOlArray)
+    limitArray();
+}
+function removeBeer (id) {
+    for (const post of bygSelvOlArray) {
+        if (id === post.id) {
+            bygSelvOlArray.push(post);
+        }
+    }
+}
+// Skub ind i array ends
 
+/* Til bekræftelse af reservation */
 function limitArray() {
     let kasse1 = 4;
     let kasse2 = 8;
@@ -354,22 +334,8 @@ function limitArray() {
     }
 }
 
-function bygSelvFunction() {
-    let chosenBeers = [];
-    for (const object of bygSelvOlArray) {
-        console.log(object)
-        for (const post of _posts) {
-            if (object === post.id) {
-                chosenBeers.push(post)
-                console.log(chosenBeers)
-            }
-        }
-    }
-    appendFilteredBygSelv(chosenBeers)
-}
 
-
-
+// Se valgte øl på bekræftelse side
 function appendFilteredBygSelv(posts) {
     let htmlTemplate = "";
     for (const post of posts) {
@@ -384,31 +350,20 @@ function appendFilteredBygSelv(posts) {
     document.querySelector('#contentOl').innerHTML = htmlTemplate;
     kasse()
 }
-
-let beersChosen = [];
-function createEmailChosenBeers() {
-
-}
+// Se valgte øl ends
+// bekræftelse ends
+// Push bestilling til firebase
 function createEmail2() {
-    let chosenBeers = [];
     let mobilInput = document.querySelector("#mobilInput");
     let emailInput = document.querySelector("#mailInput");
-    for (const object of bygSelvOlArray) {
-        console.log(object)
-        for (const post of _posts) {
-            if (object === post.id) {
-                chosenBeers.push(post)
-                console.log(chosenBeers)
-            }
-        }
-    }
+
     function mailMobilInput() {
         // references to the input field
             if (bygSelvArray.includes("kasse1")) {
-                let ol1 = chosenBeers[0].name
-                let ol2 = chosenBeers[1].name
-                let ol3 = chosenBeers[2].name
-                let ol4 = chosenBeers[3].name
+                let ol1 = bygSelvOlArray[0].name
+                let ol2 = bygSelvOlArray[1].name
+                let ol3 = bygSelvOlArray[2].name
+                let ol4 = bygSelvOlArray[3].name
                 let newEmail = {
                     email: emailInput.value,
                     mobil: mobilInput.value,
@@ -416,14 +371,14 @@ function createEmail2() {
                 };
                 bestilRef.add(newEmail);
             } else if (bygSelvArray.includes("kasse2")) {
-                let ol1 = chosenBeers[0].name;
-                let ol2 = chosenBeers[1].name;
-                let ol3 = chosenBeers[2].name;
-                let ol4 = chosenBeers[3].name;
-                let ol5 = chosenBeers[4].name;
-                let ol6 = chosenBeers[5].name;
-                let ol7 = chosenBeers[6].name;
-                let ol8 = chosenBeers[7].name;
+                let ol1 = bygSelvOlArray[0].name;
+                let ol2 = bygSelvOlArray[1].name;
+                let ol3 = bygSelvOlArray[2].name;
+                let ol4 = bygSelvOlArray[3].name;
+                let ol5 = bygSelvOlArray[4].name;
+                let ol6 = bygSelvOlArray[5].name;
+                let ol7 = bygSelvOlArray[6].name;
+                let ol8 = bygSelvOlArray[7].name;
                 let newEmail = {
                     email: emailInput.value,
                     mobil: mobilInput.value,
@@ -431,18 +386,18 @@ function createEmail2() {
                 };
                 bestilRef.add(newEmail);
             } else if (bygSelvArray.includes("kasse3")) {
-                let ol1 = chosenBeers[0].name;
-                let ol2 = chosenBeers[1].name;
-                let ol3 = chosenBeers[2].name;
-                let ol4 = chosenBeers[3].name;
-                let ol5 = chosenBeers[4].name;
-                let ol6 = chosenBeers[5].name;
-                let ol7 = chosenBeers[6].name;
-                let ol8 = chosenBeers[7].name;
-                let ol9 = chosenBeers[8].name;
-                let ol10 = chosenBeers[9].name;
-                let ol11 = chosenBeers[10].name;
-                let ol12 = chosenBeers[11].name;
+                let ol1 = bygSelvOlArray[0].name;
+                let ol2 = bygSelvOlArray[1].name;
+                let ol3 = bygSelvOlArray[2].name;
+                let ol4 = bygSelvOlArray[3].name;
+                let ol5 = bygSelvOlArray[4].name;
+                let ol6 = bygSelvOlArray[5].name;
+                let ol7 = bygSelvOlArray[6].name;
+                let ol8 = bygSelvOlArray[7].name;
+                let ol9 = bygSelvOlArray[8].name;
+                let ol10 = bygSelvOlArray[9].name;
+                let ol11 = bygSelvOlArray[10].name;
+                let ol12 = bygSelvOlArray[11].name;
                 let newEmail = {
                     email: emailInput.value,
                     mobil: mobilInput.value,
@@ -450,22 +405,22 @@ function createEmail2() {
                 };
                 bestilRef.add(newEmail);
             } else if (bygSelvArray.includes("kasse4")) {
-                let ol1 = chosenBeers[0].name;
-                let ol2 = chosenBeers[1].name;
-                let ol3 = chosenBeers[2].name;
-                let ol4 = chosenBeers[3].name;
-                let ol5 = chosenBeers[4].name;
-                let ol6 = chosenBeers[5].name;
-                let ol7 = chosenBeers[6].name;
-                let ol8 = chosenBeers[7].name;
-                let ol9 = chosenBeers[8].name;
-                let ol10 = chosenBeers[9].name;
-                let ol11 = chosenBeers[10].name;
-                let ol12 = chosenBeers[11].name;
-                let ol13 = chosenBeers[12].name;
-                let ol14 = chosenBeers[13].name;
-                let ol15 = chosenBeers[14].name;
-                let ol16 = chosenBeers[15].name;
+                let ol1 = bygSelvOlArray[0].name;
+                let ol2 = bygSelvOlArray[1].name;
+                let ol3 = bygSelvOlArray[2].name;
+                let ol4 = bygSelvOlArray[3].name;
+                let ol5 = bygSelvOlArray[4].name;
+                let ol6 = bygSelvOlArray[5].name;
+                let ol7 = bygSelvOlArray[6].name;
+                let ol8 = bygSelvOlArray[7].name;
+                let ol9 = bygSelvOlArray[8].name;
+                let ol10 = bygSelvOlArray[9].name;
+                let ol11 = bygSelvOlArray[10].name;
+                let ol12 = bygSelvOlArray[11].name;
+                let ol13 = bygSelvOlArray[12].name;
+                let ol14 = bygSelvOlArray[13].name;
+                let ol15 = bygSelvOlArray[14].name;
+                let ol16 = bygSelvOlArray[15].name;
                 let newEmail = {
                     email: emailInput.value,
                     mobil: mobilInput.value,
@@ -477,7 +432,9 @@ function createEmail2() {
         }
         mailMobilInput();     
     }  
+// push bestilling ends
 
+// Få pris og kasse ind på bekræftelse side
 function kasse() {
     if (bygSelvArray.includes("kasse1")) {
         document.querySelector("#contentKasse").innerHTML = "4 øl - 150,-"
@@ -496,10 +453,7 @@ function kasse() {
         document.querySelector("#contentPris").innerHTML = ""
     }
 }
-
-
-
-
+// pris og kasse ends 
 
 //Modal //
 

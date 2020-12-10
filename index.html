@@ -134,7 +134,7 @@
         </div>
             </div>
 
-            <div id="grid-container-pc-ol">
+            <div class="grid-container-pc-ol">
                 <div class="filterOlPC">
                 </div>
                 <div class="content grid-container">
@@ -143,7 +143,7 @@
 
         </section>
         <section id="searchFilteredContent" class="page">
-            <section class="filter "></section>
+            <section class="filter"></section>
 
             <div class="grid-ol-filter">
                 <div id="filterDivTwo" class="filteredBtns">
@@ -158,7 +158,10 @@
         </div>
      
             </div>
+            <div class="grid-container-pc-ol">
+            <div id="filteredFilterPC"></div>
             <div id="filteredContent" class="grid-container"></div>
+        </div>
         </section>
 
 
@@ -175,7 +178,7 @@
                 <li>Vælg dine specialøl</li>
                 <li>Klik reserver</li>
                 <li>Vi pakker din ølkasse</li>
-                <li>Du afhenter</li>
+                <li id="afhent">Du afhenter</li>
             </ul>
         </div>
         </div>
@@ -261,7 +264,7 @@
                     <p>INDTAST DINE OPLYSNINGER</p>
                 <input type="text" id="mobilInput" placeholder="MOBILNUMMER">
                 <input type="text" id="mailInput" placeholder="E-MAIL">
-                <form id="checkboxWrap"> 
+                <form id="checkboxWrap">  <br>
                     <input type="checkbox">
                     <label for="checked" class="nyhedsbrevTekst">TILMELD DIG VÆSKEBALANCENS <br>NYHEDSBREV OG SMS SERVICE. DU KAN TIL ENHVER TID FRAMELDE DIG IGEN.</label>
                     <br>
@@ -320,8 +323,44 @@ E-mail:  vaeskebalancen@gmail.com
 <p>Adresse: Vestergade 64, 8000 Aarhus C </p><br>
     <div class="mapouter"><div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=vestergade%2064&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://embedgooglemap.net/mapv2/"></a></div></div>  </section>
     </main>
-    <footer></footer>
-</div>
+    <footer>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="first">
+                        <h4>Kontaktinformation</h4>
+                        <p> Tlf: +45 21 45 43 39</p>
+                        <p> E-mail: vaeskebalancen@hotmail.com</p>
+                        <p> Adresse: Vestergade 64, 8000 Aarhus C</p>
+                       
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xs-12">
+                    <div class="second">
+                        <h4> Nyhedsbrev</h4>
+      <p> Tilmeld dig vores nyhedsbrev. På den måde går du aldrig glip af vores nyeste specialøl.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xs-12">
+                    <div class="third">
+                        <h4> Find os her</h4>
+                       
+ <a href="https://www.facebook.com/vaeskebalancen" target="_blank"><img src="img/facebook1.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/vaeskebalancen/" target="_blank"><img src="img/insta1.png" alt="Instagram"></a></div>
+           
+                      
+                    </div>
+                </div>
+     </div>
+     </div>
+        
+    </footer>
+
     <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
     <script src="js/spa.js"></script>
