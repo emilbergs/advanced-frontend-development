@@ -1011,7 +1011,7 @@ margin-bottom: 5%;
 .second p, .second2 p {
     color: #fff;
     text-decoration: none;
-    letter-spacing: 3px;
+    letter-spacing: normal;
     font-weight: regular;
     font-size: 14px;
     transition: 0.2s;
@@ -1067,6 +1067,22 @@ margin-bottom: 5%;
 
 footer img {
     margin: 0 0 5% 0;
+    width: 10%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#emailBtnFooter {
+border: 1px solid grey;
+    padding: 2% 1% 2% 1%;
+    outline: 0;
+    color: #1D4D5D;
+    background-color: white;
+    border: #1D4D5D;
+    border-radius: 12px;
+    width: 35%;
+    font-size: 0.8em;
+    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.19);
 }
 
 
@@ -1339,7 +1355,181 @@ header {
         .first h4::after {
             left: 40%;
         }
+
+.row {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.first {
+    margin-top: 0;
+    padding: 0;
+}
+
+.second {
+    margin-top: 70px;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.second p {
+    letter-spacing: normal;
+}
+
+.third {
+    margin-top: 70px;
+}
+
+#emailBtnFooter {
+    border: 1px solid grey;
+    padding: 2% 1% 2% 1%;
+    outline: 0;
+    color: #1D4D5D;
+    background-color: white;
+    border: #1D4D5D;
+    border-radius: 12px;
+    width: 35%;
+    font-size: 0.8em;
+    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.19);
+}
+
+footer img {
+   width: 7%;
+   padding-right: 10px;
+   padding-left: 10px;
+}
+
+#yourEmail {
+    font-size: 0.8em;
+}
+
+footer label {
+    font-size: 0.8em;
+}
 /* FORSIDE slut*/
 } /* COMPUTER ENDS */
 
+/*
+.first {
+    margin-top: 110px;
+    margin-bottom: 50px;
+    color: #ffff;
+}
 
+    .first h4 {
+        font-size: 20px;
+        letter-spacing: 3px;
+        position: relative;
+        margin: 20px;
+        font-size: 1.6em;
+        color: #fff;
+        padding: 50px 0 0.5em 0;
+    }
+
+        .first h4::after {
+            content: '';
+            background: #31829B;
+            width: 20%;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 40%;
+        }
+
+    .first p {
+        font-size: 14px;
+        color: #fff;
+    }
+
+.second {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: #ffff;
+    text-align: center;
+}
+
+.second2 {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: #ffff;
+    text-align: center;
+}
+
+.second h4 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    color: #fff;
+    padding-bottom: 0.5em;
+}
+
+    .second h4::after {
+        content: '';
+        background: #31829B;
+        width: 20%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 40%;
+    }
+
+
+.second p, .second2 p {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: regular;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+    .second a:hover, .second2 a:hover {
+        color: #fff;
+        transition: 0.2s;
+        text-shadow: 1px 1px 20px rgba(0,0,0,1);
+        text-decoration: none
+
+    }
+
+
+
+.third {
+    margin-top: 40px;
+    color: #fff;
+
+}
+
+
+    .third h4 {
+        font-size: 20px;
+        letter-spacing: 3px;
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 1.6em;
+        color: #fff;
+        padding-bottom: 0.5em;
+    }
+
+
+        .third h4::after {
+            content: '';
+            background: #31829B;
+            width: 20%;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 40%;
+        }
+
+
+    .third a {
+        color: #fff;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-size: 14px;
+        transition: 0.2s;
+    } 
+    */
