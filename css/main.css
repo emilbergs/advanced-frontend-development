@@ -1011,7 +1011,7 @@ margin-bottom: 5%;
 .second p, .second2 p {
     color: #fff;
     text-decoration: none;
-    letter-spacing: 3px;
+    letter-spacing: normal;
     font-weight: regular;
     font-size: 14px;
     transition: 0.2s;
@@ -1067,6 +1067,22 @@ margin-bottom: 5%;
 
 footer img {
     margin: 0 0 5% 0;
+    width: 10%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#emailBtnFooter {
+border: 1px solid grey;
+    padding: 2% 1% 2% 1%;
+    outline: 0;
+    color: #1D4D5D;
+    background-color: white;
+    border: #1D4D5D;
+    border-radius: 12px;
+    width: 35%;
+    font-size: 0.8em;
+    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.19);
 }
 
 
@@ -1339,7 +1355,73 @@ header {
         .first h4::after {
             left: 40%;
         }
-/* FORSIDE slut*/
-} /* COMPUTER ENDS */
 
+.row {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.first {
+    margin-top: 0;
+    padding: 0;
+}
+
+.second {
+    margin-top: 70px;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.second p {
+    letter-spacing: normal;
+}
+
+.third {
+    margin-top: 70px;
+}
+
+#emailBtnFooter {
+    border: 1px solid grey;
+    padding: 2% 1% 2% 1%;
+    outline: 0;
+    color: #1D4D5D;
+    background-color: white;
+    border: #1D4D5D;
+    border-radius: 12px;
+    width: 35%;
+    font-size: 0.8em;
+    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.19);
+}
+
+footer img {
+   width: 7%;
+   padding-right: 10px;
+   padding-left: 10px;
+}
+
+#yourEmail {
+    font-size: 0.8em;
+}
+
+footer label {
+    font-size: 0.8em;
+}
+
+footer {
+    margin-top: 5%;
+}
+/* FORSIDE slut*/
+/* Byg selv*/
+#bygKasse {
+    background-color:  #2B6A80;
+    color: white;
+    height: 10px;
+    padding: 2%;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1em;
+}
+/* Byg selv ends*/
+
+} /* COMPUTER ENDS */
 
