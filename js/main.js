@@ -48,7 +48,7 @@ function createEmail1() {
         email: emailInput.value,
     };
     emailRef.add(newEmail);
-    emailInput.value = "Thanks!";
+    emailInput.value = "Tak!";
 }
 
 function createEmail3() {
@@ -94,6 +94,7 @@ function showFilter() {
     filter.style.display="block";
     document.querySelector("#ol").style.display = "none"
     document.querySelector("#searchFilteredContent").style.display = "none"
+    document.querySelector("footer").style.display = "none"
     let template = /*html*/ `
     <h2 id="filterFontOverskrift">Filter</h2>
     <p id="filterFont">Her kan du filtrere gennem </br> vores udvalg af øl<p>
@@ -243,12 +244,14 @@ function noToggleMenu() {
     filter.style.display = "none";
     document.body.style.overflowY = "auto";
     document.querySelector("#searchFilteredContent").style.display = "block"
+    document.querySelector("footer").style.display = "block"
 }
 function removeMenu() {
     let filter = document.querySelector(".filter");
     filter.style.display = "none";
     document.body.style.overflowY = "auto";
     document.querySelector("#ol").style.display = "block"
+    document.querySelector("footer").style.display = "block"
     window.location = "#ol"
 }
 
@@ -327,7 +330,8 @@ function addBeer(id) {
 function removeBeer (id) {
     for (const post of bygSelvOlArray) {
         if (id === post.id) {
-            bygSelvOlArray.push(post);
+            bygSelvOlArray.pop(post);
+            console.log()
         }
     }
 }
