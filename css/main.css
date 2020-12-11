@@ -1304,12 +1304,26 @@ border: 1px solid grey;
 }
 
 #resTak {
-    margin: 2% 10% 2% 10%; 
+    margin: 2% 25% 2% 25%; 
+    padding: 2% 5% 5% 5%;
 }
 #resTak span {
     font-weight: bolder;
     color: #ffff;
     font-size: 1.3em;
+}
+
+#tilbageStart {
+    transition:all 0.3s ease;
+}
+
+#tilbageStart:hover {
+    box-shadow:
+                1px 1px #53a7ea,
+                2px 2px #53a7ea,
+                3px 3px #53a7ea;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
 }
 /* FORSIDE */
 
@@ -1542,6 +1556,29 @@ header {
         transform: translateX(-3px);
 }
 
+#olDescription {
+    padding: 0 25% 0 25%;
+    line-height: 25px;
+}
+
+#cover {
+    width: 50%;
+    border-radius: 50%;
+}
+
+#omos {
+    padding: 0 10% 0 10%;
+    line-height: 35px;
+    text-align: left;
+}
+
+#sådanGørDu {
+    margin-top: 2%;
+}
+
+#sådanGørDu p {
+    margin-bottom: 5%;
+}
 
 .filterButtons {
     background-color: white;
