@@ -919,11 +919,16 @@ margin-bottom: 5%;
 #aLittleMargin {
     margin-top: 15%;
 }
-#filterIcon {
+.filterIcon {
     margin-right: 10%;
     width: 60%;
 }
 #filterDivOne .grid-container{
+    grid-template-columns: 70% 30%;
+    column-gap: 0;
+}
+
+#filterDivTwo .grid-container{
     grid-template-columns: 70% 30%;
     column-gap: 0;
 }
