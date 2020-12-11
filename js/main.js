@@ -328,13 +328,13 @@ function addBeer(id) {
     limitArray();
 }
 function removeBeer (id) {
-    for (const post of bygSelvOlArray) {
-        if (id === post.id) {
-            bygSelvOlArray.pop(post);
-            console.log()
-        }
-    }
+   let newBeerArray = bygSelvOlArray.filter(beer => beer.id !== id);
+   bygSelvOlArray = [...newBeerArray];
+   console.log(bygSelvOlArray)
 }
+
+
+
 // Skub ind i array ends
 
 /* Til bekræftelse af reservation */
